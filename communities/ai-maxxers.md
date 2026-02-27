@@ -84,6 +84,22 @@ Status is *lost* by:
 
 ---
 
+## The 2025 Hollowing Out (Critical Update)
+
+By 2025, the term "e/acc" was being **hollowed out and retconned**. The original pseudonymous founders had largely moved on or distanced themselves from the label. Many authentic early adherents quietly dropped it as it became a brand for influencer tech bros posting about their morning routines and productivity stacks. The movement's internal contradictions became harder to ignore:
+
+- e/acc claimed to be anti-institutional but its primary function post-2024 became providing **ideological cover for institutional actors** (a16z, DOGE-adjacent policy networks, Musk enterprises)
+- The movement is increasingly captured by exactly the power structures it claimed to oppose
+- The label is now simultaneously more mainstream (politicians use it) and less meaningful (original community has abandoned it)
+
+This is the most important current story about e/acc and it's absent from most analyses.
+
+**Garry Tan's role is underweighted in most accounts.** As YC president, his e/acc signaling had direct operational effects: which founders got funded, which cultural norms got reinforced in early-stage startup culture, what kind of founders felt culturally at home in YC. This was not just Twitter performance — it was pipeline curation.
+
+**Biohacking is not a lifestyle flavor — it is the theological center.** Longevity and performance optimization is the personal-scale expression of the same thesis as e/acc: the body is a system to be optimized, constraints on biological performance are analogous to constraints on technological progress. Vitalism is the philosophical core. Treating the biohacking/fitness sub-tribe as "adjacent" misreads its structural importance.
+
+---
+
 ## Key Figures (Netnographic Entry Points)
 
 | Handle | Role | Why They Matter |

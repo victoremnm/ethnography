@@ -47,15 +47,35 @@ This is not the degen crowd. **Prediction market participants tend to identify a
 
 ---
 
+## Two Very Different Cultures Within One Label
+
+**Metaculus / Superforecaster culture and Polymarket culture are not points on a spectrum — they are nearly separate communities**, the cEDH vs. casual Commander divide applied to forecasting.
+
+**Metaculus / Superforecasters:**
+- Professional forecasters treating this as a discipline with 10-year track records
+- Calibration scores, Brier scores as primary status credentials
+- View Polymarket with mild contempt as "a gambling site with good PR"
+- Deliberately small, knowledge-selective community
+- LessWrong / Rationalist adjacent — the intellectual genealogy is clear
+
+**Polymarket / Kalshi:**
+- PnL is the actual status currency, not calibration score
+- Most participants don't track calibration at all
+- The rationalist epistemic frame is the *aspiration*, not the description
+- A large portion of volume is Spike-player types (using the MTG taxonomy): here to win, don't particularly care about the intellectual project
+
+**The important correction**: the document's earlier claim that "epistemic humility is valued" describes the *aspirational identity* of prediction market enthusiasts, not their actual behavior. The revealed preference is PnL. The stated preference is intellectual rigor. Conflating these is a significant analytical error.
+
 ## Cultural Identity and Status Mechanics
 
-**The core identity signal**: being a good forecaster. Calibration scores, Brier scores, track records on Metaculus — these are status credentials here in a way that PnL screenshots are in memecoin culture.
+**Status by platform:**
+- **Metaculus**: Calibration scores, Brier scores, long-form reasoning. "I was wrong and here's why" earns genuine respect.
+- **Polymarket/Kalshi**: PnL, first to call a major event correctly, size of winning position.
 
-**Key community norms:**
-- **Epistemic humility** is valued — "I was wrong and here's why" earns respect
-- **Reasoning is visible** — you share your thesis, not just your position
-- **Contrarianism is rewarded** when backed by evidence — "the market is mispriced here because..."
-- **Conflict of interest is acknowledged** — if you're political, you disclose bias
+**Shared community norms (where they do apply):**
+- **Reasoning is visible** — you share your thesis, not just your position (stronger norm on Metaculus than Polymarket)
+- **Contrarianism is rewarded** when backed by evidence
+- **Conflict of interest is at least acknowledged** in the Metaculus/rationalist community
 
 **Linguistic register**: much more formal and analytical than CT. References to "base rates," "outside view," "reference class forecasting," "Superforecasters" (Tetlock's work). LessWrong / Rationalist adjacent.
 
@@ -70,13 +90,24 @@ This is not the degen crowd. **Prediction market participants tend to identify a
 
 ---
 
-## The Epistemics Culture (Oxford/Cambridge Frame)
+## Post-2024 Political Contamination (Critical Update)
 
-From a historian of science perspective, prediction markets represent a revival of the **"marketplace of ideas" concept** with real financial stakes. They operationalize the question Francis Bacon and early Enlightenment thinkers grappled with: *how do we aggregate distributed knowledge?*
+The 2024 election success created a serious legitimacy problem that most prediction market profiles ignore: **Polymarket became politically associated with the right** because it called Trump's victory more aggressively and earlier than polls did. This association has materially changed the community's self-presentation and public reception.
 
-The rationalist community (LessWrong, Slate Star Codex lineage) that partly inhabits this space sees prediction markets as **epistemic infrastructure** — a way to hold intellectuals accountable for their claims in ways that think-pieces never do.
+The epistemic claim — "markets aggregate information better than polls" — became entangled with a political one — "Trump supporters were right, pollsters were wrong." The result:
+- Left-leaning journalists and researchers became more skeptical of prediction markets as a neutral information source
+- The "French whale" who bet ~$30M on Trump attracted disproportionate narrative attention
+- The market mechanism's neutrality claim became contested political territory
 
-Habermas's **ideal speech situation** — participants with equal standing, no coercion, purely epistemic persuasion — is approximated (imperfectly) here. The market mechanism enforces a kind of truth-telling that pundit culture systematically avoids.
+**On the French whale**: the framing that he "had access to proprietary polling" is one hypothesis. Others: he was aggressively risk-tolerant and happened to be right; he was coordinating with others to move the market; he was hedging real-world exposure. Presenting the information-edge interpretation as the clean answer is an epistemically sloppy move in a document about epistemics.
+
+## The Epistemics Culture (Historical Frame)
+
+From a historian of science perspective, prediction markets represent a revival of the **"marketplace of ideas" concept** with real financial stakes — operationalizing the question Condorcet and Hayek grappled with: how do we aggregate distributed knowledge across a population?
+
+The **Hayek question** is the foundational one here: can prices aggregate distributed information efficiently? Prediction markets are the empirical test. The answer so far: yes, better than polls and pundits, but with structural vulnerabilities (adverse selection, liquidity concentration, political capture of interpretation).
+
+The rationalist community (LessWrong, Slate Star Codex lineage) sees prediction markets as **epistemic infrastructure** — holding intellectuals accountable for their claims in ways that think-pieces and op-eds never do. The Metaculus track record is genuinely the closest thing that exists to empirical accountability for public intellectual claims.
 
 ---
 
