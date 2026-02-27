@@ -2,7 +2,7 @@
 
 ## Who They Are
 
-Andreessen Horowitz (a16z) is not just a VC firm — it is a **media, narrative, and infrastructure machine** disguised as a fund. Understanding them requires understanding that the investment is almost secondary to the platform they've built around it.
+Andreessen Horowitz (a16z) is not just a VC firm — it is a **media, narrative, and infrastructure machine** disguised as a fund.
 
 - **AUM**: ~$42B total; $7.6B+ in crypto-specific funds
 - **Crypto fund history**: a16z crypto was one of the first dedicated crypto VC vehicles at scale
@@ -29,7 +29,7 @@ Their Big Ideas 2025-2026 emphasis:
 
 ## Internal Team Fragmentation (The Part They Don't Publicize)
 
-a16z is NOT monolithic. The document risks treating it as a single culture. The reality:
+a16z is NOT monolithic. The reality:
 
 - **Chris Dixon's crypto team**: thesis-driven, long-horizon, openly ideological (e/acc-adjacent), tolerant of high-variance bets
 - **Marc Andreessen's consumer/AI team**: faster cycle, more product-market fit focused, less patient
@@ -85,7 +85,7 @@ The honest pipeline, in order of importance:
 Marc Andreessen's 2011 essay established a metaphysical claim: software is the most important force in civilization. Everything since has been an extension of this. The team self-selects for people who believe technology is **categorically different** from other economic forces — not just a sector, but a civilizational shift.
 
 ### The Founder-Supremacist Culture
-a16z was originally founded on the idea that **founders make better CEOs** than professional managers. They've moderated this, but the culture still valorizes the visionary technologist above the operator. They are attracted to people with strong, somewhat-contrarian convictions.
+a16z was originally founded on the idea that **founders make better CEOs** than professional managers. The culture still valorizes the visionary technologist above the operator. They are attracted to people with strong, somewhat-contrarian convictions.
 
 ### Intellectual Ecosystem as Moat
 The a16z blog, podcast, and newsletter function as **belief pre-installation** — they publish the ideas, founders internalize them, then pitch products that match the worldview. This is not cynical; it's genuine. But it means:

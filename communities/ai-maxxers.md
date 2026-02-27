@@ -31,13 +31,11 @@ Origins: a May 2022 pseudonymous newsletter by `@BasedBeffJezos` (Guillaume Verd
 | Anti-EA (Effective Altruism) | "Doomers," "safetyists" are slurs here |
 | Post-nation-state logic | Code > law; capital flows > citizenship |
 
-**The key ideological tension**: e/acc positions itself as the philosophical opposite of EA (Effective Altruism). Where EA says "move carefully, consider all harms," e/acc says "the harm is in slowing down." This creates an unusually high-cohesion in-group built around a shared enemy.
+**The key ideological tension**: e/acc positions itself as the philosophical opposite of EA (Effective Altruism). Where EA says "move carefully, consider all harms," e/acc says "the harm is in slowing down." The shared enemy creates unusually high in-group cohesion.
 
 ---
 
 ## Why AI + Crypto Fuse Here
-
-This is the critical synthesis for anyone trying to understand the ecosystem:
 
 1. **Both are permissionless** — no one's approval needed to launch a token or train a model
 2. **Both decentralize power** — away from banks, regulators, incumbent tech companies
@@ -91,8 +89,6 @@ By 2025, the term "e/acc" was being **hollowed out and retconned**. The original
 - e/acc claimed to be anti-institutional but its primary function post-2024 became providing **ideological cover for institutional actors** (a16z, DOGE-adjacent policy networks, Musk enterprises)
 - The movement is increasingly captured by exactly the power structures it claimed to oppose
 - The label is now simultaneously more mainstream (politicians use it) and less meaningful (original community has abandoned it)
-
-This is the most important current story about e/acc and it's absent from most analyses.
 
 **Garry Tan's role is underweighted in most accounts.** As YC president, his e/acc signaling had direct operational effects: which founders got funded, which cultural norms got reinforced in early-stage startup culture, what kind of founders felt culturally at home in YC. This was not just Twitter performance — it was pipeline curation.
 

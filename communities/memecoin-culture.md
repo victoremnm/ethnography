@@ -10,8 +10,6 @@ The current epicenter: **pump.fun** on Solana. As of January 2025, over 6 millio
 
 ## The Core Cultural Logic
 
-Memecoins operate on a logic that seems alien from a fundamentals-investing frame but is internally coherent:
-
 > **Attention is the scarce resource. Tokens financialize attention.**
 
 This is not irrational — it's an explicit acknowledgment that all asset value is ultimately socially constructed, and memecoins just strip away the pretense. The community understands this. It's a feature, not a bug.
@@ -65,7 +63,7 @@ This is not irrational — it's an explicit acknowledgment that all asset value 
 
 ## The Psychological Architecture
 
-This is not uninformed people being exploited. This is a sophisticated **attention arbitrage game** with coherent internal logic:
+This is a sophisticated **attention arbitrage game** with coherent internal logic:
 
 1. **Game theory**: Everyone knows most tokens fail. You're betting you can find/create/exit the 0.1% that succeeds.
 2. **Greater fool rationality**: You don't need to believe in the asset — you need to believe someone else will buy from you.

@@ -4,8 +4,6 @@
 
 Prediction markets are platforms where participants buy and sell contracts tied to the outcomes of future events — elections, economic data, scientific findings, sports results. Prices represent crowd-sourced probability estimates. The core thesis: **markets aggregate information better than polls, pundits, or experts** because participants put real money behind their beliefs.
 
-This is one of the most intellectually serious corners of the crypto-adjacent ecosystem. It attracts a different kind of participant than memecoins — not degens but **epistemic rationalists**, data analysts, political insiders, and institutional macro traders.
-
 ---
 
 ## The Major Platforms
@@ -42,8 +40,6 @@ This single event:
 | **Macro traders** | Express views on policy, fed rates, geopolitics | Existing financial sophistication |
 | **Sports bettors** | Familiar mechanics, new venue | Domain expertise |
 | **Researchers** | Study information aggregation and market efficiency | Academic interest |
-
-This is not the degen crowd. **Prediction market participants tend to identify as skilled, calibrated thinkers** — the culture rewards intellectual honesty, not vibes.
 
 ---
 
@@ -103,17 +99,15 @@ The epistemic claim — "markets aggregate information better than polls" — be
 
 ## The Epistemics Culture (Historical Frame)
 
-From a historian of science perspective, prediction markets represent a revival of the **"marketplace of ideas" concept** with real financial stakes — operationalizing the question Condorcet and Hayek grappled with: how do we aggregate distributed knowledge across a population?
-
-The **Hayek question** is the foundational one here: can prices aggregate distributed information efficiently? Prediction markets are the empirical test. The answer so far: yes, better than polls and pundits, but with structural vulnerabilities (adverse selection, liquidity concentration, political capture of interpretation).
-
 The rationalist community (LessWrong, Slate Star Codex lineage) sees prediction markets as **epistemic infrastructure** — holding intellectuals accountable for their claims in ways that think-pieces and op-eds never do. The Metaculus track record is genuinely the closest thing that exists to empirical accountability for public intellectual claims.
+
+The **Hayek question** is foundational: can prices aggregate distributed information efficiently? Prediction markets are the empirical test. The answer so far: yes, better than polls and pundits, but with structural vulnerabilities (adverse selection, liquidity concentration, political capture of interpretation).
 
 ---
 
 ## Who Supplies Earliest Signal
 
-The most interesting research question here. Early signal tends to come from:
+Early signal tends to come from:
 - **Niche domain experts** with information others don't have
 - **People with genuine political/geographic access** (regional knowledge)
 - **Traders who model probability vs. public sentiment gaps** (the "narrative discount")
