@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "substack": {
+      "command": "uv",
+      "args": [
+        "run",
+        "/Users/victorem/Documents/Repositories/personal/substack-mcp/server.py"
+      ]
+    }
+  }
+}

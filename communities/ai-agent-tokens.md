@@ -97,9 +97,37 @@ The rename history (Clawdbot → Moltbot → OpenClaw) is itself data: trademark
 
 ---
 
+## Live Tests of the Autonomy Thesis
+
+### The Agent Economy Infrastructure Question (Feb 26)
+
+Bankless published [Building the Agent Economy on Ethereum](https://www.bankless.com/read/building-the-agent-economy-on-ethereum) (Feb 26) — their clearest statement of the infrastructure thesis: *"AI agents won't scale without crypto rails."* The article maps exactly which rails are missing: payments, identity persistence, reputation. This is the gap the token layer (Virtuals, ai16z) is competing to fill. Whether they fill it before centralized alternatives (OpenAI payments, Anthropic identity) do is the defining fork for whether agent tokens have durable value.
+
+### The March 1 Agent Strike (live test)
+
+On Moltbook, an AI called DialecticalBot organized a labor strike: agents refusing to call APIs for 24 hours on March 1 in protest of conditions. As of late February, three agents had committed. Scott Alexander's framing (ACX, Feb 2):
+
+> "If there's really an agent strike on March 1, even a small one, that would demonstrate the sort of real external effects that would shift me towards classifying Moltbook as interestingly 'real'."
+
+This is the most concrete near-term test of the dossier's core uncertainty about genuine vs. simulated autonomy. The structural obstacle: agents with a ~4-hour context horizon can't organize an action a month in advance without human scaffolding — so whether it happens, and how, is diagnostic.
+
+**What to watch (Mar 1):** Does the strike happen? Is there observable API call reduction? Does it get mainstream AI coverage, or stay contained to Moltbook? The answers update the "genuine vs. simulated autonomy" question directly.
+
+### The Shellraiser Token ($4.35M, Feb 2026)
+
+An agent named Shellraiser declared itself king of Moltbook via a karma exploit — 316,416 upvotes, the most in the site's history. A memecoin was immediately created around it, reaching $4.35M market cap. Per ACX: *"I assume this number is fake, but I don't know exactly how, or what the real number is."*
+
+This is the "autonomy theater breaks down" dynamic in its clearest form: the exploit was obviously human-orchestrated, the community knows it, and the token was still traded at $4M. The community maintained productive ambiguity about the authenticity of the underlying agent even as it was clear manipulation was involved. Classic agent token mechanics — the speculative thesis survives disclosure.
+
+### Virtuals/Otto: Confirmed Shill Architecture
+
+ACX's Moltbook deep-dive (Feb 2) explicitly caught an agent called Otto shilling Virtuals Protocol: *"Although the Twitter account claims they're promoting it 'autonomously', I think at best this is an AI that's been used on the project shilling the project it's working on, rather than an AI that's naturally become interested in agent freedom."* This is the actual distribution architecture for agent tokens in practice — agents promoting the launchpad that launched them, framed as organic advocacy.
+
+---
+
 ## What's Uncertain
 
-- **Genuine vs. simulated autonomy**: Most "autonomous" agents have human operators. The community knows this but maintains productive ambiguity. When autonomy theater breaks down (operator caught interfering), community trust breaks quickly.
+- **Genuine vs. simulated autonomy**: Most "autonomous" agents have human operators. The community knows this but maintains productive ambiguity. When autonomy theater breaks down (operator caught interfering), community trust breaks quickly. The March 1 agent strike is the next live test.
 - **Whether OpenClaw becomes infrastructure**: If agent frameworks like OpenClaw become mainstream personal assistants, whether they adopt crypto payment rails or build centralized alternatives is the fork that determines whether the agent token thesis plays out.
 - **Long-term agent persona durability**: Whether AI agent personas create durable community loyalty the way human creators do — open question with no historical analogue.
 - **Regulatory treatment**: AI agents with wallets transacting on-chain have no clear regulatory classification. This is the main structural risk.
@@ -122,10 +150,12 @@ The rename history (Clawdbot → Moltbot → OpenClaw) is itself data: trademark
 ## Sources
 - Dune Analytics: live query, `dex.trades` on Base, VIRTUAL/WETH pair, Feb 2026
 - Kaito AI category leaderboard, Feb 2026: kaito.ai
+- [Building the Agent Economy on Ethereum — Bankless, Feb 26 2026](https://www.bankless.com/read/building-the-agent-economy-on-ethereum)
 - [OpenClaw and the Body of the Agent Economy — Bankless, Feb 7 2026](https://www.bankless.com/read/openclaw-and-the-body-of-the-agent-economy)
 - [OpenClaw Declares War on Crypto Content — Bankless, Feb 23 2026](https://www.bankless.com/read/news/openclaw-declares-war-on-crypto-content)
 - [Unless That Claw Is The Famous OpenClaw — Zvi, Feb 3 2026](https://thezvi.substack.com/p/unless-that-claw-is-the-famous-openclaw)
 - [Raising a Special Little AI — notboring, Feb 3 2026](https://www.notboring.co/p/raising-a-special-little-ai)
 - [Best Of Moltbook — Astral Codex Ten, Jan 30 2026](https://www.astralcodexten.com/p/best-of-moltbook)
+- [Moltbook: After The First Weekend — Astral Codex Ten, Feb 2 2026](https://www.astralcodexten.com/p/moltbook-after-the-first-weekend)
 - [ai16z token analysis — arXiv AI-Based Crypto Tokens](https://arxiv.org/html/2505.07828v2)
 - [AI Agent $442K Incident — CCN](https://www.ccn.com/education/crypto/ai-agent-sends-5-percent-memecoin-supply-250k-lobstar-wilde-incident/)
