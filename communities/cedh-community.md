@@ -2,9 +2,7 @@
 
 ## Why This Document Exists
 
-cEDH (Competitive Elder Dragon Highlander) is analyzed here not primarily as a Magic: The Gathering subculture, but as an **analytical instrument** — a well-documented competitive optimization community that provides a structural template for understanding other competitive optimization subcultures, including crypto trading, prediction markets, and the AI/memecoin space.
-
-If you understand cEDH, you already understand the deep structure of many crypto communities. You've been playing the same game with different cards.
+cEDH (Competitive Elder Dragon Highlander) is analyzed here as a well-documented competitive optimization community — a case study in how a grassroots subculture creates its own rules, status hierarchies, and institutional infrastructure within an official format that was never designed for it.
 
 ---
 
@@ -91,18 +89,7 @@ The Commander Rules Committee banned Mana Crypt, Jeweled Lotus, Dockside Extorti
 
 ## The TCG Economy Analogy for Crypto
 
-The evaluating agent on this research project produced the following mapping that should become the primary analytical frame for the broader project:
-
-| TCG Role | Crypto/AI Equivalent |
-|----------|---------------------|
-| WotC (set designers) | **a16z** — decides what gets printed into the meta |
-| Competitive meta discourse (cEDH) | **e/acc** — what's tier 1 and why; the philosophy of optimal play |
-| Secondary market speculation (alt arts, hype cards) | **Memecoins** — value from attention, decoupled from game performance |
-| Price memory + arbitrage layer | **Prediction markets** — correcting mispricing across platforms |
-| Deck-builders competing under constraints | **Founders** — executing within the rules a16z sets |
-| Kitchen table casual Commander | **Retail crypto users** — playing the same game at fundamentally different stakes and social contracts |
-
-**The key insight that makes this analogy productive**: in cEDH, you can *lose* to a player with a $200 proxy deck against your $5,000 original card deck because **knowledge beats capital** when skill ceilings are high. Crypto degens believe this about themselves. The question is whether it's true in their domain the way it's (approximately) true in cEDH.
+**The core structural insight:** In cEDH, you can *lose* to a player with a $200 proxy deck against your $5,000 original card deck because **knowledge beats capital** when skill ceilings are high. The format is a clean proof that community consensus, information asymmetry, and execution quality are the actual determinants of outcomes — not resource entry cost alone.
 
 ---
 
