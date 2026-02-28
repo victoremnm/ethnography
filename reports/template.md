@@ -14,3 +14,11 @@
 - Top 3 narratives
 - Top 5 posts
 - 3 engagement templates
+
+## Customer Segment Matrix (Template)
+| Segment | Needs | Trust Signals | Friction Points | Activation Trigger |
+|---|---|---|---|---|
+| CT-native | | | | |
+| Builders | | | | |
+| Institutional | | | | |
+| Silent Majority | | | | |
