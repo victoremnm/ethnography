@@ -61,6 +61,34 @@ Zvi writes weekly AI roundups that are explicitly critical of both safety theate
 
 ---
 
+## Live Evidence: What Each Newsletter Actually Covered (Feb 2026)
+
+This is not speculation about what each newsletter *tends* to cover — this is what the RSS feeds returned in Feb 2026, grounding the tier structure in observable behavior.
+
+**OpenClaw / Moltbook (the AI agent framework story):**
+| Newsletter | Article | Framing |
+|-----------|---------|---------|
+| Zvi | "Unless That Claw Is The Famous OpenClaw" (Feb 3) | Technical deep-dive + safety analysis; synthesis of what OpenClaw actually does |
+| notboring | "Raising a Special Little AI" (Feb 3) | Skeptical but acknowledging; "what's the real insight behind the hype?" |
+| ACX | "Best Of Moltbook" (Jan 30) | Epistemics lens; "straddles AIs imitating a social network vs. AIs actually having one" |
+| Bankless | "OpenClaw and the Body of the Agent Economy" (Feb 7) | Infrastructure thesis: "organs of an agent economy — payments, reputation, identity — have been built separately; OpenClaw may be the body they plug into" |
+| Import AI | Issue #443 (Feb) | Research context; AI agent ecologies in the wild |
+
+**Prediction Markets (Feb 2026 structural developments):**
+| Newsletter | Article | Key Claim |
+|-----------|---------|-----------|
+| Bankless | "Polymarket Partners With Kaito to Launch Attention Markets" (Feb 10) | Mindshare data → financial instrument; two communities converging |
+| Bankless | "Polymarket Snaps Up Prediction Market API Startup Dome" (Feb 19) | Polymarket building infrastructure backbone, not just consumer app |
+| Bankless | "The 3 Fights Over Prediction Markets" (Feb 14) | Three structural battles: gambling vs. finance, regulatory model, political legitimacy |
+| Bankless | "CFTC Chief Defends Exclusive Control" (Feb 17) | Federal supremacy; CFTC vs. state regulation fight |
+| Bankless | "A First-Principles Defense of Prediction Markets" (Feb 21) | Markets should be federally regulated — Bankless pro-regulation stance |
+| Zvi | Multiple weekly roundups | Prediction markets as epistemic accountability tools |
+| ACX | Moltbook discussion | Prediction market adjacent: AI agents forecasting |
+
+**The citation cascade observed in practice:** ACX covered Moltbook on Jan 30 → Zvi published OpenClaw deep-dive Feb 3, same day as notboring → Bankless published the infrastructure thesis Feb 7 → Import AI included it in issue #443. Timeline confirms the ACX → specialist → Bankless → CT cascade pattern documented above.
+
+---
+
 ## How to Use Substack as Context for This Research
 
 **For AI/crypto intersection:** Bankless + Not Boring catch the narratives before they become CT consensus. Read the headline and first 500 words; the rest is often padding.
