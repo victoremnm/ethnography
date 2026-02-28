@@ -1,5 +1,7 @@
 # Seed Lists
 
+> **Ethics note:** All handles listed here are public figures with substantial public followings who engage in public discourse on their platforms. This list is for pattern analysis and community observation, not individual targeting. See [`ethics.md`](../ethics.md) for full research ethics guidelines.
+
 ## CT Core Handles (Crypto Twitter Power Nodes)
 - `@marc_andreessen` — a16z co-founder, e/acc signaler
 - `@cdixon` — a16z crypto lead, thesis originator

@@ -92,13 +92,11 @@ This was identified as a missing piece across multiple community profiles. Here'
 
 ---
 
-## The Brad Troemel / Contrapoints Lens (Incoming)
+## The Brad Troemel / ContraPoints Lens
 
-A separate analysis is in progress applying:
+These lenses are documented in [`sources/analytical-lenses-troemel-contrapoints.md`](../sources/analytical-lenses-troemel-contrapoints.md), covering:
 - **Troemel's attention-as-sport frame**: How do these communities function as athletic competitions for attention? What are the rules, who wins, what do they win?
-- **Contrapoints' aesthetic pipeline analysis**: How do aesthetics and irony function as radicalization tools in e/acc and crypto communities? How does someone move from "interested observer" to "true believer"?
-
-These lenses will be added as a `methods/cultural-theory-frames.md` document.
+- **ContraPoints' aesthetic pipeline analysis**: How do aesthetics and irony function as radicalization tools in e/acc and crypto communities? How does someone move from "interested observer" to "true believer"?
 
 ---
 

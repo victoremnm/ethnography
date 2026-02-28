@@ -21,7 +21,7 @@
 ### The Official Description vs. Reality
 
 **Official description (Palantir career page, 2024):**
-> "FDEs responsibilities look similar to those of a startup CTO: you'll work in small teams and own end-to-end execution of high-stakes projects... FDSEs focus exclusively on one customer, building production-ready workflows on Palantir's platforms in close collaboration with that organization's teams."
+> "FDEs' responsibilities look similar to those of a startup CTO: you'll work in small teams and own end-to-end execution of high-stakes projects... FDSEs focus exclusively on one customer, building production-ready workflows on Palantir's platforms in close collaboration with that organization's teams."
 
 **OpenAI's version (2025 career listing):**
 > "Lead complex end-to-end deployments of frontier models in production alongside strategic customers."
