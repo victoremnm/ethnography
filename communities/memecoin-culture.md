@@ -61,15 +61,11 @@ This is not irrational — it's an explicit acknowledgment that all asset value 
 
 ---
 
-## The Psychological Architecture
+## Why People Do This
 
-This is a sophisticated **attention arbitrage game** with coherent internal logic:
-
-1. **Game theory**: Everyone knows most tokens fail. You're betting you can find/create/exit the 0.1% that succeeds.
-2. **Greater fool rationality**: You don't need to believe in the asset — you need to believe someone else will buy from you.
-3. **Thrill-seeking as service**: Many participants explicitly frame losses as paying for entertainment.
-4. **Community belonging**: Shared suffering + shared wins = intense tribal bonds. The trenches create in-group cohesion.
-5. **Anti-establishment catharsis**: For asset-poor younger participants, memecoins are a middle finger to traditional wealth structures. Can't afford a house; can ape into $BONK.
+1. **Game theory**: Everyone knows most tokens fail. You're betting you can find/create/exit the 0.1% that succeeds before others do.
+2. **Community belonging**: Shared suffering + shared wins create intense tribal bonds. The trenches produce in-group cohesion faster than most communities.
+3. **Anti-establishment catharsis**: For asset-poor younger participants, a $500 PnL means something qualitatively different in Manila than in San Francisco. The "middle finger to wealth structures" framing is far more literal in SEA than in the US.
 
 ---
 
@@ -94,27 +90,18 @@ Memecoin culture has a pronounced Southeast Asia and Latin America component tha
 
 This geographic distribution also explains why some viral memes travel globally (emotional universals: squirrel, dog) while others die in their origin community (US political memes rarely resonate in Southeast Asia).
 
-## The AI Agent Meta-Layer (New Frontier)
+## The AI Agent Meta-Layer
 
-The LOBSTAR incident was one data point. The actual frontier is the **$ai16z / Virtuals / daos.fun phenomenon** — a genuinely new structure:
+A distinct sub-genre has emerged within the memecoin space: **tokens tied to AI agent personas**. The speculative thesis differs from standard memecoins — you're not buying attention momentum, you're buying belief in machine autonomy.
 
-- Tokens where the "dev" is an AI agent with wallet control
-- Community uncertainty about whether there's a human behind the agent (often there is; sometimes plausibly not)
-- The agent posts, the agent trades, the agent creates "lore" — and the token price tracks the agent's perceived intelligence and personality
-- **ai16z** specifically peaked at $2B market cap; the token literally named after the VC firm it was satirizing
+- **$ai16z**: peaked at $2B market cap; token named after the VC firm it satirized; community formed around the agent's "investment decisions"
+- **Virtuals Protocol ($VIRTUAL)**: launchpad for AI agent tokens on Base; $37M DEX volume in 7 days (Feb 2026, Dune data) — confirms this is real trading volume, not just CT narrative
+- **daos.fun**: agent DAO token launches; the pump.fun equivalent for agent tokens
+- **The LOBSTAR incident (2025)**: AI agent given $50K SOL to trade autonomously; moved $442K — demonstrated how porous the human/machine boundary is in practice
 
-This is a distinct meta-layer that the basic memecoin taxonomy doesn't capture: the agent-as-cult-leader, where belief in the agent's autonomy is the speculative thesis. The community is buying a performance of machine consciousness.
+Practically: most "autonomous" agents have human operators. The community maintains productive ambiguity about this. When the operator is caught interfering, community trust breaks quickly.
 
-## Where AI Enters the Picture
-
-The AI/memecoin fusion was structurally inevitable:
-
-- **AI agent tokens**: $VIRTUAL, $AIXBT, $ai16z — tokens tied to AI agent personas or systems
-- **AI-launched tokens**: Agents creating tokens autonomously, adding speculative meta-layers
-- **AI caller bots**: Automated systems detecting early momentum, broadcasting to trading groups
-- **The LOBSTAR incident (2025)**: AI agent given $50K SOL to trade autonomously moved $442K — demonstrated how porous the human/machine boundary is here
-
-The community finds AI agents *aesthetically compelling* — an autonomous agent trading its own tokens resonates with the memecoin ethos of removing human intention from value creation. It's a philosophical completion: pure market, no human, just signal.
+Full taxonomy of AI agent projects tracked by Kaito: see `communities/ai-agent-tokens.md`.
 
 ---
 
