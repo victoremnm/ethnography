@@ -37,9 +37,6 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `prediction-markets.md` | Active | 4, 3 |
 | `red-pill-black-pill.md` | Active | 6, 8 |
 | `tiktok-creators.md` | Active | 8 |
-| `bjj-community.md` | Analogy | Status mechanics |
-| `cedh-community.md` | Analogy | Competitive subculture |
-| `lambda-phi-epsilon.md` | Active | Initiation culture |
 | `crypto-twitter.md` | Active | 5, 8 |
 | `network-states.md` | Active | 5, 6 |
 | `proof-of-personhood.md` | Active | 5, 9 |
@@ -55,6 +52,7 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | File | Purpose |
 |------|---------|
 | `canonical-texts.md` | Primary sources with thread tags, credibility tiers, and analytical use notes. |
+| `capital-thesis-map.md` | Who is funding the AI/crypto intersection — VC and AI lab positions, the collision course, and who wins. |
 | `ai-substack-discourse.md` | Four-tier Substack map (thesis formation → counter-discourse). |
 | `seed-lists.md` | Tiered Twitter/X handles, Telegram observation points, market data sources. |
 | `analytical-lenses-troemel-contrapoints.md` | Brad Troemel (attention-as-sport) and ContraPoints (aesthetic radicalization pipeline) as analytical lenses. |
