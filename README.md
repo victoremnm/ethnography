@@ -41,6 +41,8 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `network-states.md` | Active | 5, 6 |
 | `proof-of-personhood.md` | Active | 5, 9 |
 | `agentic-governance.md` | Active | 7, 5 |
+| `hyperliquid.md` | Active | 5, 3, 8 |
+| `groyper-pipeline.md` | Active | 6, 1, 8 |
 | **Farcaster / Warpcast** | Missing | 5, 7 |
 | **DeSci** | Missing | 2, 5 |
 | **Open-Source AI** | Missing | 1, 2 |

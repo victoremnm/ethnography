@@ -102,7 +102,36 @@ Primary source library for the ethnography project. Each entry is a source that 
 
 ## Thread 8 — Status Theory / Desire Theory → Memecoin Culture
 
-*(No entries yet — use `/ethnography-ingest` to add: pump.fun culture writeups, Girardian crypto analysis)*
+### Shitcoining 101 (BONKbot Internal Documentation)
+
+| Field | Value |
+|-------|-------|
+| URL | https://docs.bonkbot.io / internal |
+| Type | community-artifact |
+| Date accessed | 2026-02-28 |
+| Thread tags | Thread 8, Thread 5, Thread 3 |
+| Community relevance | memecoin-culture.md |
+| Credibility | High as operational primary source — this is documentation from inside a major ecosystem participant (BONKbot); not analytical but operationally accurate for the tools/vocabulary layer |
+
+**Summary:** BONKbot's internal "Shitcoining 101" document (dated March 2025, internal reference 250303) is a practitioner's onboarding guide to Solana memecoin trading produced by one of the major Telegram trading bots in the ecosystem. It is not an external analysis of memecoin culture — it *is* memecoin culture from the inside, narrated by participants who built infrastructure for it. The document's analytical value is in three layers: (1) it provides the most complete public taxonomy of ecosystem tooling available (charts, web terminals, Telegram bots, coin auditors, launchpads); (2) it encodes the community's explicit self-understanding of its own logic ("shitcoining = investing in attention"; "narrative follows price"); and (3) its glossary reveals the cultural-political substrate of the vocabulary, including terms with racist and far-right etymological roots that the community uses without apparent friction.
+
+BONKbot itself is a Telegram-based trading bot for Solana memecoins, with a web terminal ("Nighthawk") in development as of the document's date. Its production of this document is itself a signal: ecosystem participants are engaged in active knowledge codification, which is a marker of a maturing subculture.
+
+**Key claims:**
+- "Shitcoining = investing in attention" — explicit participant articulation of the attention-economy thesis; confirms the community holds this as a first-order belief, not a critic's framing
+- "Narrative follows Price" — inverts conventional finance logic (price reflects fundamentals); in this model price *creates* narrative, which *creates* community, which creates more buying pressure; a Girardian mimetic cascade in practitioner language
+- Full metas taxonomy: animal coins (DOGE, WIF), internet meme coins (Pepe, Chud, Wojak), famous-person-association coins (DOGE/Elon, Broccoli/CZ) — the categories by which new tokens are understood and evaluated
+- Ecosystem tool hierarchy with market position assessments: Photon (largest by volume), Bullx (on-par, large KOL deals), Axiom (January 2025 launch, large market share captured fast), Trojan (biggest Telegram bot, adds copytrading), Bloom (pioneered sniping meta), Rickbot (monopoly in coin auditing)
+- Operational note: most users filter coins via **Photon Memescope**, not pump.fun's own interface — the launchpad and the discovery layer are separate and pump.fun does not control the discovery experience
+- Launchpad landscape: pump.fun holds effective monopoly on token creation (free, frictionless); Meteora is the platform for celebrity coins with "easy deployer extraction" (analytically significant: the document names extraction as a design feature, not a bug)
+
+**Analytical use:** This document is the operational ground truth for the ecosystem layer of memecoin-culture.md. Use it to: (1) identify which platforms are gaining vs. losing market share (Axiom's rapid rise from January 2025 launch is the live signal; Moonshot's decline is named explicitly); (2) map the extraction architecture — "easy deployer extraction" is the language Meteora's niche is described in by practitioners, which is the clearest evidence that extraction is a known and accepted design parameter; (3) anchor the glossary in memecoin-culture.md — many terms in common use trace to this document's definitions; (4) use the FSH and Jeet entries as evidence for the Thread 6 (NRx/far-right) cultural overlap thesis — these are not coincidental borrowings, they reflect the cultural substrate from which degen culture draws.
+
+**Key quote:**
+> "Shitcoining = investing in attention"
+> "Narrative follows Price"
+
+*(Document also defines Meteora's launchpad niche as enabling "easy deployer extraction" — the most analytically significant phrase in the document, as it names the extraction mechanic in the community's own operational vocabulary.)*
 
 ---
 
