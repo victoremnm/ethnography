@@ -222,6 +222,8 @@ The rationalist community (LessWrong, Slate Star Codex lineage) sees prediction 
 
 The **Hayek question** is foundational: can prices aggregate distributed information efficiently? Prediction markets are the empirical test. The answer so far: yes, better than polls and pundits, but with structural vulnerabilities (adverse selection, liquidity concentration, political capture of interpretation).
 
+**Robin Hanson's futarchy** is the fullest extension of this epistemology: "vote on values, bet on beliefs." Democratic voting selects what outcomes society wants; prediction markets determine which policies best achieve them. Kalshi CEO Tarek Mansour's framing (prediction markets are better than congressional committees) and Vitalik's on-chain governance experiments both trace back to this proposal. See `sources/canonical-texts.md` → Thread 4 for the primary source entry.
+
 ---
 
 ## Key Entry Points
