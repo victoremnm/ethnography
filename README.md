@@ -7,3 +7,4 @@ A public-facing research hub for understanding online communities using modern n
 - `communities/` — community-specific research (CT, AI, memecoins, prediction markets)
 - `reports/` — weekly deep dives + shareable summaries
 - `sources/` — link collections, seed lists, watchlists
+- `sources/deep-reads/` — full-text extractions and multimedia summaries (feeds back into community dossiers)
