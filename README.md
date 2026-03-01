@@ -41,11 +41,14 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `network-states.md` | Active | 5, 6 |
 | `proof-of-personhood.md` | Active | 5, 9 |
 | `agentic-governance.md` | Active | 7, 5 |
+| `solana-dev-culture.md` | Active | 3, 5, 7 |
+| `desci.md` | Active | 5, 2, 3 |
+| `refi-public-goods.md` | Active | 10, 2, 4 |
+| `regulatory-layer.md` | Active | 5, 6, 4 |
+| `politifi.md` | Active | 8, 6, 5 |
 | **Farcaster / Warpcast** | Missing | 5, 7 |
-| **DeSci** | Missing | 2, 5 |
 | **Open-Source AI** | Missing | 1, 2 |
 | **RWA / Stablecoin** | Missing | 5 |
-| **Regulatory Layer** | Missing | 5, 6 |
 
 ### `sources/` — Evidence Base
 
