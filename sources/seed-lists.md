@@ -101,3 +101,90 @@ These are better monitored via **Twitter Lists** than direct follows. Their valu
 - [arXiv: AI-Based Crypto Tokens](https://arxiv.org/html/2505.07828v2)
 - [Grayscale AI × Crypto Report](https://research.grayscale.com/reports/ai-is-coming-crypto-can-help-make-it-right)
 - [Animoca / Yat Siu — AI agents to bring crypto to masses](https://cryptonews.com/news/animoca-yat-siu-ai-agents-2026-utility/)
+
+---
+
+## Community Pulse: Real-Time Monitoring
+
+> This section supports the 30-min/week monitoring protocol documented in [`methods/community-pulse-monitoring.md`](../methods/community-pulse-monitoring.md). Items here are observation points, not participation points.
+
+### Reddit Communities
+
+| Subreddit | Members | Signal Type | Research Value |
+|-----------|---------|-------------|----------------|
+| [r/CryptoMoonShots](https://reddit.com/r/CryptoMoonShots) | ~2.2M | Low-cap speculation, promotional | Lagging indicator — shows what reached retail consciousness |
+| [r/SatoshiStreetBets](https://reddit.com/r/SatoshiStreetBets) | ~761K | High-risk trades, meme coins | Retail sentiment barometer; chaotic but legible |
+| [r/memecoins](https://reddit.com/r/memecoins) | ~200K+ | Memecoin launches, community | Low signal — mostly dev self-promotion |
+| [r/solana](https://reddit.com/r/solana) | ~500K+ | Ecosystem discussion, technical | Medium signal; best Reddit source for Solana narrative |
+| [r/defi](https://reddit.com/r/defi) | ~300K+ | Protocol discussion, regulatory | Higher signal; useful for institutional/regulatory framing |
+
+**RSS feeds (add to reader, filter by score >500 upvotes):**
+```
+https://www.reddit.com/r/CryptoMoonShots/.rss
+https://www.reddit.com/r/SatoshiStreetBets/.rss
+https://www.reddit.com/r/solana/.rss
+```
+
+**Historical search tool:** [PullPush.io](https://pullpush-io.github.io/) — Pushshift successor; use for retrospective queries about specific token narratives on Reddit.
+
+### X (Twitter) Lists and Accounts — Trenches Layer
+
+These supplement the existing Tier 1/2/3 structure above with memecoin-specific observation points.
+
+**Monitoring tools (not follow lists):**
+- [Kaito.ai](https://kaito.ai) — mindshare leaderboard; use weekly to identify what narratives are gaining CT share
+- [LunarCrush](https://lunarcrush.com) — social sentiment aggregation across Twitter + Reddit; "Galaxy Score" for token social signal
+- [Tweetscout](https://tweetscout.io) — account influence validation; use to check whether a KOL's following is genuine before adding to monitoring
+
+**Account validation rule:** Before adding any memecoin KOL to a monitoring list, check via Tweetscout and BubbleMaps (wallet relationship to promoted tokens). If wallet purchased before promotion, treat as paid KOL — observe the coordination pattern, not the call.
+
+**X search operators for weekly scans:**
+- `pump.fun filter:links` — finds posts sharing pump.fun token links (launch activity)
+- `$[TICKER] contract` — finds organic community posts about specific tokens
+- `"trenches" solana` — finds degen community language in real use
+
+### Telegram Groups (Public/Observable)
+
+**Official bot channels (public, no trading required):**
+- `@bonkbot_io` — BONKbot official; product updates, ecosystem announcements
+- `@BananaGunBot` — Banana Gun official; tool ecosystem signals
+- `@MaestroBots` — Maestro official
+- `@rick_bot` — Rickbot; DM the bot with a contract address for instant audit (research tool)
+
+**Usage note:** When a memecoin launches on pump.fun, the dev's promotional post (on X or Telegram) typically includes a joinable group link. These are publicly accessible for the first 24–72 hours and show community formation in real time. Found via X search for the contract address after identifying a trending token on DEX Screener.
+
+### Dune Analytics Dashboards
+
+**Weekly monitoring (read-only, no account required for most):**
+
+| Dashboard | URL | What It Shows |
+|-----------|-----|---------------|
+| Pump.fun main | [dune.com/pumpdotfun](https://dune.com/pumpdotfun) | Daily launches, graduation rate, fees, active addresses |
+| Meme coins + narratives | [dune.com/uwusanauwu/memes](https://dune.com/uwusanauwu/memes) | Cross-chain memecoin narrative tracking |
+| Pump.fun deployer records | Community dashboard via GitHub: oladeeayo/Pumpfun-Token-Deployer-Records-Dashboard | Dev behavior, self-buys, bundle detection |
+
+**Key metric to track weekly:** Graduation rate (% of launched tokens reaching $69K market cap). This single number encodes the state of community participation:
+- Rising graduation rate = active meta, community has thesis on what to buy
+- Falling graduation rate = market cooling, noise increasing relative to signal
+
+### On-Chain Analysis Tools
+
+| Tool | URL | Use Case | Cost |
+|------|-----|----------|------|
+| DEX Screener | [dexscreener.com/solana/pumpfun](https://dexscreener.com/solana/pumpfun) | Real-time trending, token community links | Free |
+| GMGN.ai | [gmgn.ai/trend?chain=sol](https://gmgn.ai/trend?chain=sol) | Smart money tracking, ~5s faster than DEX Screener | Free |
+| BubbleMaps | [bubblemaps.io](https://bubblemaps.io) | Holder visualization, bundle/cabal detection | Free |
+| Photon Memescope | [photon-sol.tinyastro.io](https://photon-sol.tinyastro.io) | Launch lifecycle view (new / graduating / graduated) | Free (read) |
+| Nansen | [nansen.ai](https://nansen.ai) | Institutional wallet labeling, smart money flows | Paid |
+
+### Political/Values Community Observation Points
+
+**Context:** The far-right/crypto intersection is ideological (libertarianism, censorship resistance) rather than primarily memecoin-focused. Overlap exists through shared meme aesthetics (Pepe, wojak, groyper imagery being financialized on pump.fun).
+
+**Observable without participation:**
+- [Gab Trends](https://trends.gab.com) — public trends feed, no account required; shows far-right crypto/Bitcoin discussion volume
+- [Cozy.tv](https://cozy.tv) — Nick Fuentes live streaming platform; publicly viewable
+- X search: `"freedom money" OR "censorship resistant" crypto` — finds ideological framing without community embeds
+- pump.fun + DEX Screener: filter for tokens using Pepe/groyper/wojak imagery to observe the financialization of far-right meme aesthetics
+
+**SPLC Cryptocurrency Report:** [splcenter.org/cryptocurrency-report](https://www.splcenter.org/cryptocurrency-report) — documents far-right crypto funding patterns; useful as external reference for on-chain forensics of political communities.

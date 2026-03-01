@@ -41,6 +41,8 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `network-states.md` | Active | 5, 6 |
 | `proof-of-personhood.md` | Active | 5, 9 |
 | `agentic-governance.md` | Active | 7, 5 |
+| `hyperliquid.md` | Active | 5, 3, 8 |
+| `groyper-pipeline.md` | Active | 6, 1, 8 |
 | `solana-dev-culture.md` | Active | 3, 5, 7 |
 | `desci.md` | Active | 5, 2, 3 |
 | `refi-public-goods.md` | Active | 10, 2, 4 |
