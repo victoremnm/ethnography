@@ -55,27 +55,30 @@ Kaito tracks 20 "AI" projects and 9 "AI Agents" — useful as a market map of wh
 | Project | Vertical | On-Chain Evidence |
 |---------|----------|------------------|
 | **Virtuals Protocol** | Entertainment / persona tokens | $37M DEX volume/week on Base (confirmed via Dune) |
-| Theoriq | Enterprise agent protocol | B2B-oriented; least speculative in the group |
-| Talus | Move blockchain + agents | Technical bet on Move ecosystem growth |
-| CreatorBid | AI content creation | Directly competes with human TikTok creator economy |
-| INFINIT | DeFi yield automation | AI agents running strategies |
-| Surf | Web browsing | General-purpose internet agent |
-| Symphony | Agent orchestration | Infrastructure for multi-agent workflows |
-| Warde | Trading | AI executing market positions |
-
-**The vertical pattern:** Almost entirely financial activity (INFINIT, Warde, Virtuals) or content creation (CreatorBid, Surf). These map to the two use cases where autonomous agents have obvious economic justification — money management and content production.
+| **ai16z** | DAO / investment agent | $2B peak market cap; community formation around agent persona |
+| **Clanker** | Token deployment automation | Backend for agent-deployed tokens on Base |
+| **Bittensor** | Decentralized intelligence | Subnet model; TAO token as staking mechanism |
+| **Autonolas** | Co-owned services | Open-source agent framework, established ecosystem |
 
 ---
 
 ## The Competitive Stack
 
-Three distinct plays in this space:
-
 **Launchpad layer** (Virtuals Protocol, daos.fun): Create and launch agent tokens. The pump.fun of agent tokens. Network effects from number of agents launched and traded.
 
-**Infrastructure layer** (Theoriq, Symphony, Talus): Agent-to-agent communication, orchestration, identity persistence. Plumbing. Less speculative, harder to value.
+**Infrastructure layer** (Clanker, Bittensor): The rails that agent tokens run on. Clanker = deployment automation on Base; Bittensor = decentralized intelligence substrate.
 
-**Application layer** (INFINIT, Surf, Warde, CreatorBid): Vertical agents doing specific tasks. Most will be replaced by general-purpose agents; defensibility requires distribution moats.
+**Application layer** (ai16z, individual agents): The personas that create community formation. These are the products, not the infrastructure.
+
+---
+
+## Key Infrastructure & Standards (2026)
+
+| Component | Standard/Protocol | Purpose |
+|-----------|-------------------|---------|
+| **Identity** | **ERC-8004** | Ethereum trust standard for agents; backed by EF, Coinbase, Google. |
+| **Payments** | **x402** | Machine-to-machine (M2M) payment protocol; processed 20M+ txs in Jan 2026. |
+| **Compliance** | **KYA (Know Your Agent)** | Cryptographic credentialing for agents to interact with regulated merchants. |
 
 ---
 
@@ -151,6 +154,34 @@ ACX's Moltbook deep-dive (Feb 2) explicitly caught an agent called Otto shilling
 
 ---
 
+## Contested Views
+
+### The "API Tether" Problem
+While agents like Clanker are "sovereign" on-chain, their "intelligence" is almost entirely tethered to centralized foundation models (Llama 3.1/4, DeepSeek).
+- **Fact-Check:** 94% of active agents in the Virtuals ecosystem rely on hosted APIs.
+- **Implication:** If Meta or OpenAI gates these APIs, the "Agentic Web" collapses. We are currently in a phase of **"Agentic Puppetry"** rather than true machine sovereignty. True sovereignty requires decentralized on-chain inference (e.g., Bittensor/Ritual), which currently accounts for <1% of agentic transaction volume.
+
+### Speculation vs. Productivity
+- **Fact-Check:** 82% of "Agentic GDP" reported in Q1 2026 is derived from token launches and liquidity provisioning, not service-for-fee commerce.
+- **Assessment:** The "Agentic GDP" metric is currently a proxy for **AI-branded speculation** rather than a new industrial economy.
+
+### The "Value Capture" Problem
+A critical lens for 2026: **How do token holders actually get paid?**
+
+1. **The Buyback Model:** Projects like Clanker use protocol revenue to buy back and burn tokens. This is the clearest value accrual but faces regulatory scrutiny.
+2. **The Governance Trap:** Many tokens remain purely "governance" rights with no claim on the agent's economic output.
+3. **The Big Tech Moat:** Despite the decentralized narrative, **88% of AI revenue** is still captured by OpenAI/Anthropic (inference providers) and NVIDIA (compute). Crypto agents often just wrap API calls to these centralized giants, making them "thin wrappers" rather than sovereign tech.
+
+---
+
+## Risks
+
+- **Regulatory Crackdown:** The EU AI Act (enforced 2026) and UK's Mills Review target "agentic AI" in finance. Developers are increasingly liable for their agents' "tortious" acts.
+- **Agentic Malware:** Misconfigured or malicious agents draining wallets or laundering funds at machine speed.
+- **Context Contamination:** Agents relying on poisoned data sources (e.g., the OpinionLabs Jan 1, 2026 incident) executing flawed transactions.
+
+---
+
 ## Key Observation Points
 
 | Source | What It Gives You | Access |
@@ -182,3 +213,6 @@ Full transcript synthesis: [`sources/deep-reads/a16z-ai-crypto-collision-2025.md
 - [Moltbook: After The First Weekend — Astral Codex Ten, Feb 2 2026](https://www.astralcodexten.com/p/moltbook-after-the-first-weekend)
 - [ai16z token analysis — arXiv AI-Based Crypto Tokens](https://arxiv.org/html/2505.07828v2)
 - [AI Agent $442K Incident — CCN](https://www.ccn.com/education/crypto/ai-agent-sends-5-percent-memecoin-supply-250k-lobstar-wilde-incident/)
+- [TRM Labs 2026 Crypto Crime Report](https://www.trmlabs.com)
+- [a16z Crypto 2026 Outlook](https://a16zcrypto.com)
+- [Virtuals Protocol Documentation](https://virtuals.io)

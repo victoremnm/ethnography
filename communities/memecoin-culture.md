@@ -121,18 +121,6 @@ Full taxonomy of AI agent projects tracked by Kaito: see `communities/ai-agent-t
 
 ---
 
-## Key Observation Platforms
-
-| Platform | Purpose | Access |
-|---------|---------|--------|
-| pump.fun | Token launch + real-time trading | Public |
-| Dune Analytics | On-chain behavioral data | Public |
-| Nansen | Wallet + flow analysis | Paid |
-| Telegram (Banana Gun, Maestro) | Automated trading bots, community groups | Semi-public |
-| X/Twitter | Narrative formation, KOL discourse | Public |
-
----
-
 ## Research Questions
 
 - How does on-chain behavior diverge from stated beliefs on X?
@@ -140,6 +128,35 @@ Full taxonomy of AI agent projects tracked by Kaito: see `communities/ai-agent-t
 - How does the community grieve/rationalize losses — what are the grief cycles?
 - What's the actual generational distribution? Is this a youth phenomenon or broader?
 - How does the dev experience differ from the trader experience? Do devs self-identify as degens?
+
+---
+
+## Contested Views: Building Around the Periphery
+
+*While the primary narrative frames memecoins as a "democratization of finance" and "programmable memes," an adversarial lens reveals a different structural reality:*
+
+### The "Extraction Machine" Reality
+Memecoin culture is less an "attention economy" and more a **negative-sum extraction engine** designed to funnel retail capital to sophisticated insiders (Devs, KOLs, and MEV bots).
+- **The 1.5% Survival Rate:** On `pump.fun`, fewer than **1.5%** of launched tokens ever reach the $69,000 "graduation" threshold to open markets. The remaining 98.5% are "graveyard" tokens where the initial liquidity is absorbed by the platform and the deployer.
+- **Forensic Evidence (Axiom Detection):** Using **Graph Visualization** and **Axiom Bundle Detection** tools, we can now prove that what appears to be "community buy-in" is often a single operator using 10-50 "bundled" wallets funded by a common SOL source.
+- **The "Retail as Exit Liquidity" Fact:** Data suggests that **98.2% of traders** on launchpads are net-negative. The "Wagmi" (We're All Gonna Make It) ritual is a linguistic survival mechanism used to maintain the influx of new "exit liquidity."
+- **Institutionalized Rugging:** The "KOL Economy" is a professionalized form of securities fraud. KOLs often receive 1-5% of the supply for "free" (via stealth-launch participation or direct transfer) in exchange for a "call." Their "call" creates the parabolic spike needed for them to exit their position.
+
+### The "Anti-Establishment" Illusion
+The "middle finger to wealth structures" narrative is the most effective marketing tool for a system that actually **reproduces wealth inequality** more efficiently than legacy systems. In the trenches, "asymmetric upside" is statistically a lottery with worse odds than a casino, packaged as a revolutionary political act.
+
+---
+
+## Key Observation Platforms
+
+| Platform | Purpose | Access |
+|---------|---------|--------|
+| pump.fun | Token launch + real-time trading | Public |
+| **Axiom Detection** | **Anti-bundle forensics (NetworkX graphs)** | **Internal/Proprietary** |
+| Dune Analytics | On-chain behavioral data | Public |
+| Nansen | Wallet + flow analysis | Paid |
+| Telegram (Banana Gun, Maestro) | Automated trading bots, community groups | Semi-public |
+| X/Twitter | Narrative formation, KOL discourse | Public |
 
 ---
 
