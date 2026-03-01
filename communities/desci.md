@@ -35,13 +35,13 @@ The DeSci thesis: crypto rails can fix all four simultaneously. DAOs replace gra
 
 ### Key Token / Financial Data Points
 
-- **BIO Protocol**: Listed Binance Jan 3, 2025; surged 2400%+ at listing; $50M+ TVL in BioDAO tokens from BIO Genesis. August 2025 surge of 270%+ driven by Aubrai AI agent launch.
+- **BIO Protocol**: Listed Binance Jan 3, 2025 as 63rd Launchpool project; $50M+ TVL in BioDAO tokens from BIO Genesis. Price action at listing and on Aubrai launch reported as significant by multiple sources but specific percentages vary by source and window — use directionally, not as precise figures.
 - **VitaDAO ($VITA)**: Pfizer Ventures + Balaji participation in $4.1M round signals institutional crossover. Vitalik Buterin personally backed; posted with VD001 longevity product sample.
 - **Rubedo Life Sciences**: First VitaDAO spinout to reach clinical stage; $40M Series A; lead candidate RLS-1496 in Phase 1 dermatology trial in Europe (early 2025). *This is the clearest evidence that the model works.*
 - **Matrix Biosciences**: Second VitaDAO spinout; University of Rochester / Vera Gorbunova lab; naked mole rat high-molecular-weight hyaluronic acid research; seed $300K from VitaDAO.
 - **pump.science (Molecule-adjacent)**: Launched two official tokens — $RIF (Rifampicin, antibiotic with longevity properties) and $URO (Urolithin A, mitophagy inducer) — as meme coins representing live longevity compounds under study. Live-streams experiments. Compromised Nov 2024 after private key exposed; attackers minted fraudulent tokens ($COKE, Urolithin B/C/D/E). RIF/URO holders received BIO airdrops.
 - **ResearchCoin ($RSC)**: Silo Pharma (NASDAQ: SILO) purchased RSC tokens Oct 2025 as a treasury investment — a public biotech company buying DeSci governance tokens is a structural first.
-- **DeSci sector total market cap**: ~$700M as of late 2024 pre-BIO-launch surge; some projections to $10B TVL by 2027 (PwC, cited by Suvudu).
+- **DeSci sector total market cap**: ~$700M as of late 2024 pre-BIO-launch surge (estimate; no single authoritative aggregator). Sector projections to $10B TVL by 2027 circulate widely but lack a citable primary source — treat as directional, not data.
 
 ### Infrastructure: The IP-NFT Mechanism (How It Actually Works)
 
@@ -133,7 +133,7 @@ The AI synthesis (Aubrai, BioAgents) is the cybernetic conclusion: AI agents tra
 |--------|------|----------------------|
 | **Tyler Golato** (@tylergolato) | Co-founder of Molecule, VitaDAO, PsyDAO; biochemist by training; CSO → CEO of Molecule AG | Rare dual credentialing: PhD biochemist + crypto protocol architect |
 | **Paul Kohlhaas** (@paulkhls) | Co-founder and CEO of Molecule + BIO Protocol | Keynoted every DeSci.Berlin; "DeSci Berlin's Paul Kohlhaas is the movement's chief public intellectual" |
-| **Vitalik Buterin** | Ethereum co-founder; early DeSci public advocate; backed VitaDAO personally | Foundational legitimacy signal; Zuzalu initiator; vocal on longevity + DeSci podcast; appearance with VD001 longevity product drove VITA +50% |
+| **Vitalik Buterin** | Ethereum co-founder; early DeSci public advocate; backed VitaDAO personally | Foundational legitimacy signal; Zuzalu initiator; vocal on longevity + DeSci podcast; publicly posted with VD001 longevity product sample (specific price impact unverified) |
 | **Brian Armstrong** | Coinbase CEO; co-founded ResearchHub; publicly advocates for paid peer review | Mainstream crypto credibility into the science layer; ResearchHub featured in *Nature* |
 | **Aubrey de Grey** | Longevity researcher; co-creator of the Aubrai AI agent; SENS Foundation; "make death optional" | Classical longevity movement credibility; bridge between academia and DeSci |
 | **Balaji Srinivasan** | Participated in VitaDAO $4.1M round; Network State theorist; "FDA exit" intellectual ancestor | Ideological spine of the regulatory exit thesis |

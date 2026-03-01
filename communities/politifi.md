@@ -108,7 +108,7 @@ Before official tokens, community developers created satirical and partisan meme
 
 ### $BARRON and Unauthorized Family Tokens
 
-Following $TRUMP and $MELANIA, dozens of unauthorized tokens were launched using the names of Barron Trump, Ivanka Trump, and others. $BARRON lost one investor ~$1M within 2 hours of launch. Trump had to publicly clarify that only $TRUMP and $MELANIA were official family tokens, demonstrating the memetic inflation problem inherent in PolitiFi proliferation.
+Following $TRUMP and $MELANIA, dozens of unauthorized tokens were launched using the names of Barron Trump, Ivanka Trump, and others. $BARRON collapsed rapidly after launch; Trump had to publicly clarify that only $TRUMP and $MELANIA were official family tokens, demonstrating the memetic inflation problem inherent in PolitiFi proliferation.
 
 ---
 
@@ -153,6 +153,7 @@ The $TRUMP dinner (May 22, 2025, Trump National Golf Club, Virginia) is the most
 - Majority (>50%) likely based outside the United States (Reuters blockchain analysis)
 - CREW analysis: 50 of the 220 invitees hold crypto assets named for Pepe the Frog (alt-right symbol), swastikas, racial slurs, and anti-Semitic ideology
 - Attendees included: crypto executives, influencers, former NBA star Lamar Odom
+- Top 25 holders collectively held significant positions; combined size reported in contemporaneous coverage but varies by analysis window
 - Price declined 16% the morning after the dinner
 
 **What this reveals:**
@@ -224,7 +225,7 @@ Endorsed $LIBRA on Valentine's Day 2025, triggering a $4.5B market cap spike tha
 
 ### MemeCore / Cherry Hsu
 
-MemeCore, a cryptocurrency company, invested $19.3M to become the second-largest public holder of $TRUMP at launch. Cherry Hsu is the company's public face. This represents institutional-scale political token accumulation — not retail FOMO, but deliberate positioning in political infrastructure.
+MemeCore, a cryptocurrency company, accumulated a substantial $TRUMP position to become one of the largest public non-insider holders at launch (institutional-scale; specific dollar figure disputed across sources). Cherry Hsu is the company's public face. This represents institutional-scale political token accumulation — not retail FOMO, but deliberate positioning in political infrastructure.
 
 ### CoinGecko (category architects)
 
