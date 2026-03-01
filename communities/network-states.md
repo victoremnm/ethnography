@@ -1,5 +1,7 @@
 # Network States & Startup Cities (2026)
 
+> **STUB** — This file is a research placeholder. Current content is structural scaffolding only. Needs: participant interviews, The Network School cohort data, Zuzalu retrospective synthesis, and on-chain governance case studies before it can be used as a community dossier. See `sources/canonical-texts.md` → Thread 5 for the theoretical anchors.
+
 ## The Thesis: "The Cloud Takes Land"
 
 In 2026, the techno-optimist movement has moved beyond digital discourse into physical implementation. The concept of the **Network State**, popularized by Balaji Srinivasan, has entered its "Pop-up to Permanence" phase.

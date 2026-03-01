@@ -158,11 +158,11 @@ ACX's Moltbook deep-dive (Feb 2) explicitly caught an agent called Otto shilling
 
 ### The "API Tether" Problem
 While agents like Clanker are "sovereign" on-chain, their "intelligence" is almost entirely tethered to centralized foundation models (Llama 3.1/4, DeepSeek).
-- **Fact-Check:** 94% of active agents in the Virtuals ecosystem rely on hosted APIs.
-- **Implication:** If Meta or OpenAI gates these APIs, the "Agentic Web" collapses. We are currently in a phase of **"Agentic Puppetry"** rather than true machine sovereignty. True sovereignty requires decentralized on-chain inference (e.g., Bittensor/Ritual), which currently accounts for <1% of agentic transaction volume.
+- **Structural claim (unverified at precision):** Critics estimate the vast majority of active agents in the Virtuals ecosystem rely on hosted centralized APIs rather than decentralized inference. The exact percentage is contested; on-chain agent call data would be the verification method.
+- **Implication:** If Meta or OpenAI gates these APIs, the "Agentic Web" collapses. We are currently in a phase of **"Agentic Puppetry"** rather than true machine sovereignty. True sovereignty requires decentralized on-chain inference (e.g., Bittensor/Ritual), which currently accounts for a small fraction of agentic transaction volume.
 
 ### Speculation vs. Productivity
-- **Fact-Check:** 82% of "Agentic GDP" reported in Q1 2026 is derived from token launches and liquidity provisioning, not service-for-fee commerce.
+- **Structural claim (unverified at precision):** As of early 2026, the overwhelming majority of activity labeled "Agentic GDP" is token launches and liquidity provisioning, not service-for-fee commerce. No independently audited breakdown exists; the underlying observation — that agent tokens are primarily traded, not used — is consistent with the Virtuals/Dune volume data above.
 - **Assessment:** The "Agentic GDP" metric is currently a proxy for **AI-branded speculation** rather than a new industrial economy.
 
 ### The "Value Capture" Problem
@@ -170,7 +170,7 @@ A critical lens for 2026: **How do token holders actually get paid?**
 
 1. **The Buyback Model:** Projects like Clanker use protocol revenue to buy back and burn tokens. This is the clearest value accrual but faces regulatory scrutiny.
 2. **The Governance Trap:** Many tokens remain purely "governance" rights with no claim on the agent's economic output.
-3. **The Big Tech Moat:** Despite the decentralized narrative, **88% of AI revenue** is still captured by OpenAI/Anthropic (inference providers) and NVIDIA (compute). Crypto agents often just wrap API calls to these centralized giants, making them "thin wrappers" rather than sovereign tech.
+3. **The Big Tech Moat:** Despite the decentralized narrative, industry analysts estimate the substantial majority of AI revenue is captured by frontier model providers (OpenAI, Anthropic) and compute suppliers (NVIDIA). Crypto agents often wrap API calls to these centralized giants, making them "thin wrappers" rather than sovereign tech. *Source pending: verify against a16z State of Crypto 2025 or equivalent industry report before citing.*
 
 ---
 
