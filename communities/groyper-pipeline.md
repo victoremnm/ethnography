@@ -251,7 +251,7 @@ This is the template for how extremist vocabulary launders itself into ambient u
 
 ## Thread Mapping (Philosophical Roots)
 
-Cross-reference with `theory/philosophical-roots.md` for full thread documentation.
+Cross-reference with [philosophical-roots](../theory/philosophical-roots.md) for full thread documentation.
 
 ### Thread 6 (NRx / Dark Enlightenment → Tech Politics) — PRIMARY CONNECTION
 
@@ -368,4 +368,4 @@ Groypers use the sovereignty vocabulary from Thread 5 (exit, trustless, permissi
 
 ---
 
-*Cross-references: `communities/memecoin-culture.md` (pump.fun mechanics, KOL economy), `communities/red-pill-black-pill.md` (manosphere-to-politics pipeline), `theory/philosophical-roots.md` (Thread 6)*
+*Cross-references: [memecoin-culture](../communities/memecoin-culture.md) (pump.fun mechanics, KOL economy), [red-pill-black-pill](../communities/red-pill-black-pill.md) (manosphere-to-politics pipeline), [philosophical-roots](../theory/philosophical-roots.md) (Thread 6)*

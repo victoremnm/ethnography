@@ -181,7 +181,7 @@ The stablecoin sector's legislative victory — the GENIUS Act, signed July 18, 
 
 The Ondo Chain announcement lists Google Cloud, Franklin Templeton, and ABN Amro as design advisors — these are the same TradFi relationships that the regulatory layer cultivates. The RWA community's TradFi access is the lobbying community's credibility.
 
-**Cross-reference:** `communities/regulatory-layer.md`
+**Cross-reference:** [regulatory-layer](../communities/regulatory-layer.md)
 
 ### DeFi / MakerDAO / Sky (Direct Capital Relationship)
 
@@ -195,7 +195,7 @@ Ondo Finance announced plans to bring tokenized US stocks and ETFs to Solana in 
 
 The relationship is infrastructure-client: Solana builders provide the rails; the RWA community provides the institutional products that run on them.
 
-**Cross-reference:** `communities/solana-dev-culture.md`
+**Cross-reference:** [solana-dev-culture](../communities/solana-dev-culture.md)
 
 ### a16z Ecosystem (VC Backer, Narrative Overlap)
 
@@ -203,13 +203,13 @@ a16z's 2026 trends piece explicitly identified stablecoins and RWA tokenization 
 
 The specific a16z framing: crypto is now in the "infrastructure" phase, and RWAs are the "killer app" that justifies the infrastructure build. This is the VC thesis being narrated into existence.
 
-**Cross-reference:** `communities/a16z-ecosystem.md`
+**Cross-reference:** [a16z-ecosystem](../communities/a16z-ecosystem.md)
 
 ### Network States (Ideological Ancestor, Practical Divergence)
 
 The Network States community (Thread 5/6) imagines stablecoins and on-chain finance as infrastructure for sovereign alternatives to nation-states. The RWA community builds those same tools but uses them to strengthen existing financial institutions, not to route around them. This creates a theoretical overlap (same tools, same rails) and a practical divergence (opposite political intentions). Balaji Srinivasan's *The Network State* imagines on-chain finance as escape from dollar hegemony; the GENIUS Act compliance framework imagines on-chain finance as dollar extension.
 
-**Cross-reference:** `communities/network-states.md`
+**Cross-reference:** [network-states](../communities/network-states.md)
 
 ---
 

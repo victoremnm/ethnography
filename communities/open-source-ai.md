@@ -200,7 +200,7 @@ The open-source AI community's relationship with the a16z ecosystem is adversari
 
 However: a16z also invested in Mistral (open-weights). The practical VC position is not ideologically consistent — they back both sides of the open/closed divide because the hedge is rational. The community notes this without resolving it.
 
-**Cross-reference:** `communities/a16z-ecosystem.md`
+**Cross-reference:** [a16z-ecosystem](../communities/a16z-ecosystem.md)
 
 ### AI Safety / EA Community (Shared Vocabulary, Opposite Conclusions)
 
@@ -208,25 +208,25 @@ The academic open-source segment and the EA/AI Safety community both use the lan
 
 The 2025 International AI Safety Report noted "wide disagreement among experts about the likelihood of losing control over advanced AI systems" — legitimizing the open-source community's rejection of the safety-through-closure argument.
 
-**Cross-reference:** `sources/ai-substack-discourse.md` (Zvi, ACX tier)
+**Cross-reference:** [ai-substack-discourse](../sources/ai-substack-discourse.md) (Zvi, ACX tier)
 
 ### DeSci (Structural Overlap)
 
 DeSci communities and the academic open-source AI community share the infrastructure-for-open-science argument and the critique of concentrated institutional power over research outputs. The BLOOM project's use of French public computing infrastructure and Mozilla's joint advocacy with Hugging Face for EU AI Act open-source exemptions are structurally parallel to DeSci's attempt to decentralize peer review and research funding. The difference: DeSci operates on blockchain infrastructure; open-source AI runs on Hugging Face's centralized-but-open platform.
 
-**Cross-reference:** `communities/desci.md`
+**Cross-reference:** [desci](../communities/desci.md)
 
 ### Solana Developer Culture (Indirect, Infrastructure Proximity)
 
 The open-source AI community's inference infrastructure (Together AI, Groq, Fireworks) is developing overlapping interests with the Solana developer community's AI agent infrastructure ambitions. The Colosseum Agent Hackathon's framing — Solana's program model is safer for AI agents than EVM's — is a bid to capture the local/open AI deployment community as users of on-chain AI coordination. Not yet a strong overlap, but the directional pull is visible.
 
-**Cross-reference:** `communities/solana-dev-culture.md`
+**Cross-reference:** [solana-dev-culture](../communities/solana-dev-culture.md)
 
 ### ReFi / Public Goods (Ideological Alignment)
 
 The academic open-source AI community's justification for open infrastructure — AI as a public good that should not be privately captured — is directly aligned with the ReFi / public goods funding community's framework. The difference is operational: open-source AI advocates pursue open licensing and public computing infrastructure; the ReFi community pursues on-chain funding mechanisms for public goods. Same values, different implementation layers.
 
-**Cross-reference:** `communities/refi-public-goods.md`
+**Cross-reference:** [refi-public-goods](../communities/refi-public-goods.md)
 
 ---
 
