@@ -48,9 +48,9 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `refi-public-goods.md` | Active | 10, 2, 4 |
 | `regulatory-layer.md` | Active | 5, 6, 4 |
 | `politifi.md` | Active | 8, 6, 5 |
-| **Farcaster / Warpcast** | Missing | 5, 7 |
-| **Open-Source AI** | Missing | 1, 2 |
-| **RWA / Stablecoin** | Missing | 5 |
+| `farcaster-warpcast.md` | Active | 5, 7 |
+| `open-source-ai.md` | Active | 1, 2, 5, 10 |
+| `rwa-stablecoin.md` | Active | 5, 4, 6 |
 
 ### `sources/` — Evidence Base
 
