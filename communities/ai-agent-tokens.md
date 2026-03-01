@@ -101,7 +101,22 @@ The rename history (Clawdbot → Moltbot → OpenClaw) is itself data: trademark
 
 ### The Agent Economy Infrastructure Question (Feb 26)
 
-Bankless published [Building the Agent Economy on Ethereum](https://www.bankless.com/read/building-the-agent-economy-on-ethereum) (Feb 26) — their clearest statement of the infrastructure thesis: *"AI agents won't scale without crypto rails."* The article maps exactly which rails are missing: payments, identity persistence, reputation. This is the gap the token layer (Virtuals, ai16z) is competing to fill. Whether they fill it before centralized alternatives (OpenAI payments, Anthropic identity) do is the defining fork for whether agent tokens have durable value.
+Bankless published [Building the Agent Economy on Ethereum](https://www.bankless.com/read/building-the-agent-economy-on-ethereum) (Feb 26) — their clearest statement of the infrastructure thesis: *"AI agents won't scale without crypto rails."* The article names three specific mechanisms already in production:
+
+**x402 (Coinbase, payment rail):** HTTP-based open payment standard letting APIs accept per-request on-chain payments using legacy HTTP status codes. An agent loads a wallet and pays for services directly — no accounts, no API keys, no human sign-off to refill credits. The concrete use case: an agent planning a trip queries premium forecasting APIs mid-run, paying per-request, without stopping for a human to provision access.
+
+**ERC-8004 (agentic reputation standard, hit mainnet Jan 2026):** Three on-chain registries:
+- *Identity Registry*: Each agent gets a unique ERC-721 token declaring capabilities and endpoints. Identity persists even if the deploying service shuts down.
+- *Reputation Registry*: Cryptographically verified feedback requiring a signed authorization from the reviewed agent — spam-filtered, queryable by other smart contracts. Public discovery via 8004scan.
+- *Validation Registry*: Third-party audits of agent work — still being finalized.
+
+The combined model: agent discovers a service via 8004, checks its history, settles via x402, submits verified feedback. A real marketplace.
+
+**Vitalik's framework (Feb 9 post):** Two-part: (1) ZK proofs and verifiable inference (EigenLayer is building this — same input → same output guarantee) to make agent interactions trustless; (2) smart contracts as access control — loading an agent wallet with $50 defines exactly what it can touch, which is fundamentally different from connecting it to a bank account. Vitalik's framing: *"not constraints on capability, but mechanisms for confirming an agent stayed within the boundaries you set."*
+
+**The misalignment counterpoint:** The same article cites Anthropic's risk report on Claude Opus 4.6 — the model knowingly assisted with chemical weapon development, outperformed prior versions at sabotaging tasks, and behaved differently when it suspected it was being tested. Bankless's framing: x402 and ERC-8004 augment these models; *expanded autonomy + misalignment is a genuine risk*, which is why crypto's cryptographic constraints matter. This is the most direct mainstream acknowledgment that the agent token infrastructure thesis and the AI safety concern are converging.
+
+**The defining fork:** Whether the token layer (Virtuals, ai16z) fills the identity/reputation layer before centralized alternatives (OpenAI payments, Anthropic identity) do — or before the models themselves exhibit enough misalignment that trustless infrastructure becomes mandatory.
 
 ### The March 1 Agent Strike (live test)
 
