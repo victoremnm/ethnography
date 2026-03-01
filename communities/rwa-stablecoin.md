@@ -36,7 +36,7 @@ This community matters to this research as the site where the cypherpunk promise
 | Total RWA including stablecoins | ~$33–36B+ | Canton Network / XBTO, late 2025 |
 | Tokenized US Treasuries TVL | Crossed $10B milestone (2025) | theccpress.com / RWA.xyz |
 | BlackRock BUIDL peak TVL | ~$2.9B (mid-2025); ~42% of tokenized Treasury market | CCN / CoinGecko |
-| Ondo Finance TVL | ~$1.8B (late 2025) | Changehero.io |
+| Ondo Finance TVL | ~$1.8B (late 2025, directional) | Changehero.io citing DeFi Llama; verify against RWA.xyz |
 | Active on-chain private credit | ~$18.91B active / $33.66B cumulative originations (Nov 2025) | RWA.xyz |
 | Average on-chain private credit yield | 9–10% annualized (mid-2025) | HTX Ventures / RWA.xyz |
 | USYC (Hashnote/Circle) at acquisition | $1.52B (January 15, 2025) | Circle press release |
@@ -132,7 +132,7 @@ The Ondo Chain announcement (February 2025) is the clearest expression: rather t
 
 **Jeremy Allaire (@jerallaire / Circle, CEO)** — The most institutionally credible voice in the stablecoin layer. Circle's GENIUS Act lobbying, its IPO process (ongoing as of early 2026), and its acquisition of Hashnote signal a company transitioning from crypto-adjacent payments startup to regulated financial infrastructure company. The Hashnote acquisition (January 2025, announced in Davos) was the move that positioned Circle as not just a stablecoin issuer but a yield-bearing cash management infrastructure provider.
 
-**Paolo Ardoino (@paoloardoino / Tether, CEO)** — The most important figure in the community by market share and the most contested by credibility. USDT at $175B is the stablecoin market's dominant force; Tether's reported $10B+ year-to-date profits in Q3 2025 (from its reserve holdings) make it one of the most profitable companies per employee in the world. Ardoino's public communications style is combative toward critics and regulators. The community's TradFi-adjacent participants treat Tether's opacity as a liability; Tether's crypto-native users treat it as irrelevant.
+**Paolo Ardoino (@paoloardoino / Tether, CEO)** — The most important figure in the community by market share and the most contested by credibility. USDT at $175B is the stablecoin market's dominant force; Tether publishes quarterly attestation reports through BDO reporting substantial profits from its reserve holdings — figures widely covered in financial press but not independently audited under GAAP standards, making precise profitability claims directional. Ardoino's public communications style is combative toward critics and regulators. The community's TradFi-adjacent participants treat Tether's opacity as a liability; Tether's crypto-native users treat it as irrelevant.
 
 **Colin Butler (Polygon / former Global Head of Institutional Capital)** — Notable for publicly stating that the RWA market needs to grow "50 to 100 times" before institutional capital would "actually want to devote time to it." This is the honest insider perspective: current RWA scale is small relative to the capital pools it wants to serve.
 
