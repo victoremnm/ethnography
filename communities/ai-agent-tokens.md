@@ -76,8 +76,8 @@ Kaito tracks 20 "AI" projects and 9 "AI Agents" — useful as a market map of wh
 
 | Component | Standard/Protocol | Purpose |
 |-----------|-------------------|---------|
-| **Identity** | **ERC-8004** | Ethereum trust standard for agents; backed by EF, Coinbase, Google. |
-| **Payments** | **x402** | Machine-to-machine (M2M) payment protocol; processed 20M+ txs in Jan 2026. |
+| **Identity** | **ERC-8004** | Ethereum trust standard for agents (hit mainnet Jan 2026; see Bankless deep-read in `sources/deep-reads/`). |
+| **Payments** | **x402** | Machine-to-machine (M2M) payment protocol developed by Coinbase (source: [x402 spec](https://x402.org)). |
 | **Compliance** | **KYA (Know Your Agent)** | Cryptographic credentialing for agents to interact with regulated merchants. |
 
 ---

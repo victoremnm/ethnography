@@ -5,7 +5,7 @@
 In 2026, the techno-optimist movement has moved beyond digital discourse into physical implementation. The concept of the **Network State**, popularized by Balaji Srinivasan, has entered its "Pop-up to Permanence" phase.
 
 - **Primary Goal:** To create "parallel institutions" and special jurisdictions for digital-first citizens.
-- **Business Model:** **Society-as-a-Service (SAS)**. Monetizing high-trust, high-intent communities through vertical integration of housing, governance, and services.
+- **Business Model:** **Society-as-a-Service**. Monetizing high-trust, high-intent communities through vertical integration of housing, governance, and services.
 
 ---
 

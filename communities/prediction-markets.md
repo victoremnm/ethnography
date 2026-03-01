@@ -38,7 +38,7 @@ While Polymarket dominates the Western/Global narrative, **OpinionLabs (O.LAB)**
 
 ## Primary Source Index (2026 Prediction Markets)
 
-- **On-Chain Audit:** [Dune Analytics: "Is Opinion Lab's $8B Volume Real?"](https://dune.com/datadashboards) (Feb 23, 2026).
+- **On-Chain Audit:** [Dune Analytics: "Is OpinionLabs' $8B Volume Real?"](https://dune.com/datadashboards) (Feb 23, 2026). Note: the original Dune dashboard title uses "Opinion Lab's" spelling — standardized here to "OpinionLabs" per platform branding.
 - **Social Hub:** [@vitalik.eth on Farcaster](https://warpcast.com/vitalik.eth) — Primary source for d/acc and "epistemic infrastructure" discourse.
 - **Leaderboard:** [Kaito Information Markets](https://kaito.ai) — Real-time mindshare tracking for platforms and creators.
 
