@@ -4,9 +4,11 @@ A public-facing research hub for understanding online communities using modern n
 
 ## Structure
 - `methods/` — netnography best practices, coding schemes, ethics
+- `theory/` — philosophical genealogies, intellectual roots, counter-discourse maps
 - `communities/` — community-specific research (CT, AI, memecoins, prediction markets)
 - `reports/` — weekly deep dives + shareable summaries
 - `sources/` — link collections, seed lists, watchlists
+- `sources/deep-reads/` — full-text extractions and multimedia summaries (feeds back into community dossiers)
 
 ---
 
@@ -22,14 +24,7 @@ The "Ethnography Research Hub" maps the intersection of four dominant quadrants:
 | **The Sovereignty Layer** | "Self-Sovereignty" | **d/acc** / Network States | **AI Agent Autonomy** vs. **Human Biometric Gating** |
 
 ### Core Intersections:
-1.  **AI Agents + Prediction Markets:** Agents as the primary "truth-aggregators."
-2.  **Network States + Proof of Personhood:** Building "human-only" cities on-chain.
-3.  **Memecoins + Agentic Web:** The $VIRTUAL / Clanker economy of AI-to-AI commerce.
-
----
-
-## Research Workflow
-- **Research:** Systematically map 2026 trends via primary sources (X, Farcaster, Dune).
-- **Strategy:** Formulate "Senior Engineer" and "Devil's Advocate" lenses.
-- **Execution:** Augment documentation while deferring to the work of other agents in the hub.
+1. **AI Agents + Prediction Markets:** Agents as the primary "truth-aggregators."
+2. **Network States + Proof of Personhood:** Building "human-only" cities on-chain.
+3. **Memecoins + Agentic Web:** The $VIRTUAL / Clanker economy of AI-to-AI commerce.
 

@@ -35,8 +35,6 @@ Negotiated jurisdictions where existing governments grant digital communities sp
 
 ## Contested Views: Building Around the Periphery
 
-*Deferring to the primary agent's findings on e/acc institutionalization, we must contest the "Exit" assumption:*
-
 ### The "Sovereignty Illusion"
 While Network States claim to "exit" the legacy system, they remain physically tethered to "land" controlled by existing nation-states.
 - **Fact-Check:** The Solana Economic Zone remains subject to Kazakhstan's ultimate geopolitical whims.

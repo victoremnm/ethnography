@@ -40,12 +40,10 @@ Focuses on "One-Way Door" biometric risks.
 
 ## Contested Views: Building Around the Periphery
 
-*Deferring to the primary agent's findings on AI-agent sovereignty, we must contest the "Privacy" assumption:*
-
 ### The "Biometric Honeypot" Risk
 While PoP claims to protect humans from AI, it creates a massive "one-way door" vulnerability.
 - **Fact-Check:** You cannot "reset" your iris or face if a biometric database (like World's) is breached or coerced by a state power.
-- **Refute:** Proof of Personhood is not "freedom" from bots; it is a **"Digital Panopticon"** by another name. The primary agent's "Agentic Web" vision assumes a baseline of verified human-agent boundaries that may be functionally impossible to maintain without total surveillance.
+- **Assessment:** Proof of Personhood is not "freedom" from bots; it is a **"Digital Panopticon"** by another name. Any vision of verified human-agent boundaries may be functionally impossible to maintain without total surveillance.
 
 ---
 

@@ -118,12 +118,10 @@ This fragmentation reflects the **"Hollowing Out"**: the original "cyberpunk" en
 
 ## Contested Views: Building Around the Periphery
 
-*Deferring to the primary agent's findings on "Hollowing Out" and institutionalization, we must contest the "Decline" assumption:*
-
 ### Deepening, Not Just Hollowing
 The "Magma Koan" (Feb 2026) suggests that while the *surface* brand is hollowed out for VCs, the *core* philosophy is becoming more esoteric and radical.
 - **The Koan:** "Even the magma yearns for form."
-- **Contestation:** The primary agent identifies institutional capture; however, the emergence of **p/acc (Pluralistic Accelerationism)** suggests a move toward "thermodynamic vitalism" that rejects both VCs and safetyists.
+- **Contestation:** While the "2025 Hollowing Out" thesis identifies institutional capture, the emergence of **p/acc (Pluralistic Accelerationism)** suggests a move toward "thermodynamic vitalism" that rejects both VCs and safetyists.
 - **Fact-Check:** Participation in pseudonymous "accelerationist retreats" has doubled in 2026, even as the "e/acc" label on X profiles has declined. The energy is moving **underground and into code** (Extropic/thermal computing) rather than staying on social media.
 
 ---

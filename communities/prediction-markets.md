@@ -46,8 +46,6 @@ While Polymarket dominates the Western/Global narrative, **OpinionLabs (O.LAB)**
 
 ## Contested Views: Building Around the Periphery
 
-*Deferring to the primary agent's analysis of the "Eastern Counterpart" growth, we must contest the "Legitimacy" assumption:*
-
 ### The Wash-Trading Reality
 The Feb 23 Dune Report confirms that OpinionLabs' volume is largely illusory.
 - **Fact-Check:** OpinionLabs produced 31% of industry volume with **<3% of total transactions**.
@@ -178,12 +176,30 @@ The "smart follower ratio" (smart followers / total followers) measures audience
 
 ---
 
+## Structural Developments (Feb 2026)
+
+Three events in Feb 2026 that signal where the space is heading:
+
+**1. Polymarket acquired Dome (Feb 19)**
+Dome was a prediction market API startup. The acquisition signals Polymarket is building toward becoming the **infrastructure backbone of the predictions industry** — not just a consumer app but an API layer that other markets and data products plug into. This changes the competitive dynamics: Polymarket isn't competing with Kalshi for retail users; it's building the plumbing Kalshi would have to pay to use.
+
+**2. Polymarket + Kaito launched Attention Markets (Feb 10)**
+Polymarket and Kaito AI launched prediction markets based on **social media mindshare and sentiment data** across X, TikTok, and YouTube. This is the direct bridge between CT analytics and prediction markets: you can now bet on which token, person, or narrative will win mindshare. The Kaito data this repo tracks (creator leaderboards, mindshare percentages) becomes directly financializable.
+
+**3. Three regulatory battles (Bankless, Feb 14)**
+The prediction market boom has triggered three distinct fights: (1) whether they're gambling or financial instruments under CFTC jurisdiction; (2) the Polymarket vs. Kalshi regulatory model competition (permissionless vs. CFTC-registered); (3) the political legitimacy question post-2024 election. The CFTC chair (Michael Selig) filed a brief declaring federal supremacy over US prediction markets (Feb 17) — defending CFTC exclusive jurisdiction against state-level attempts to regulate.
+
+**Bankless thesis (Feb 21)**: "Prediction markets are markets. Markets should be regulated at the federal level." — Bankless has taken an explicitly pro-federal-regulation stance, framing CFTC oversight as legitimizing rather than restricting.
+
+---
+
 ## Intersection with AI and Crypto
 
 1. **Crypto rails**: Polymarket runs on Polygon, settling in USDC. Trustless settlement for trustless predictions is genuine product-market fit — not a technical choice looking for a use case.
 2. **AI as participant**: LLMs are being benchmarked against Polymarket. Research ongoing into whether LLM forecasts approach human Superforecaster calibration.
 3. **Crypto narratives as markets**: Prediction markets bet on crypto events (ETF approvals, protocol launches, regulatory decisions), creating feedback loops between CT and prediction markets.
 4. **AI + market design**: Next frontier is AI-generated markets — automatically creating resolvable questions from news events, automating liquidity provision. PiP World (tracked by Kaito's AI category) is explicitly building this.
+5. **Attention markets**: Polymarket × Kaito attention markets (Feb 2026) make social media mindshare directly tradeable — CT discourse now has a financial instrument attached to it.
 
 ---
 
@@ -228,5 +244,10 @@ The **Hayek question** is foundational: can prices aggregate distributed informa
 - [Prediction Markets Go Mainstream — Nieman Lab](https://www.niemanlab.org/2024/12/prediction-markets-go-mainstream/)
 - [a16z State of Crypto 2025](https://a16zcrypto.substack.com/p/state-of-crypto-2025-the-latest-data)
 - [Great Prediction War 2026 — FinancialContent](https://markets.financialcontent.com/stocks/article/predictstreet-2026-2-5-the-great-prediction-war-polymarket-vs-kalshi)
+- [The 3 Fights Over Prediction Markets — Bankless, Feb 14 2026](https://www.bankless.com/read/the-3-fights-over-prediction-markets)
+- [A First-Principles Defense of Prediction Markets — Bankless, Feb 21 2026](https://www.bankless.com/read/a-first-principles-defense-of-prediction-markets)
+- [Polymarket Snaps Up Prediction Market API Startup Dome — Bankless, Feb 19 2026](https://www.bankless.com/read/news/polymarket-snaps-up-prediction-market-api-startup-dome)
+- [Polymarket Partners With Kaito to Launch Attention Markets — Bankless, Feb 10 2026](https://www.bankless.com/read/news/polymarket-partners-with-kaito-to-launch-attention-markets)
+- [CFTC Chief Defends Agency's Exclusive Control over Prediction Markets — Bankless, Feb 17 2026](https://www.bankless.com/read/news/cftc-chair-selig-defends-exclusive-federal-jurisdiction-over-prediction-markets)
 - Dune Analytics: live query, `tokens.transfers` on Polygon → CTF Exchange contract, Feb 2026
 - Kaito Information Markets leaderboard: kaito.ai, 24H and 3M windows, Feb 2026
