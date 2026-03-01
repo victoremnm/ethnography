@@ -17,6 +17,8 @@ Source: Live Dune query against `dex.trades` on Base, Feb 2026. This is not CT n
 
 **ai16z** peaked at $2B market cap at cycle high. The token named after the VC firm it was satirizing — community formation around an agent "persona" rather than underlying protocol utility.
 
+**Web crawler market (a16z, 2025):** ~50% of all internet traffic is already non-human. TikTok's ByteSpider is currently the most common crawler on the web. AI crawler blocking jumped from 9% → 37% of the top 10,000 websites in approximately one year (Cloudflare public data). The "agent economy" is not a future state — it already accounts for roughly half of all internet activity. Source: a16z crypto roundtable, Cara Woo segment.
+
 ---
 
 ## The Structural Thesis
@@ -159,6 +161,12 @@ ACX's Moltbook deep-dive (Feb 2) explicitly caught an agent called Otto shilling
 | daos.fun | Agent DAO token launches | daos.fun |
 | X: `$VIRTUAL`, `$ai16z` cashtags | CT discourse, narrative velocity | X |
 | X: `#OpenClaw`, `#Moltbook` | Agent framework discourse, mainstream AI community | X |
+
+---
+
+## Deep Read
+
+Full transcript synthesis: [`sources/deep-reads/a16z-ai-crypto-collision-2025.md`](../sources/deep-reads/a16z-ai-crypto-collision-2025.md)
 
 ---
 
