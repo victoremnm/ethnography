@@ -66,6 +66,7 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | File | Purpose |
 |------|---------|
 | `where-the-puck-goes.md` | Strategic synthesis — AI/crypto/prediction market convergence and positioning. |
+| `game-theory-synthesis.md` | Why communities behave as they do — 5 game structures (signaling, lemons, beauty contest, QF assurance, iterated PD) with cross-community dynamics. |
 | `forward-deployed-engineers.md` | FDE model deep dive — Palantir origin, diffusion across enterprise AI. |
 | `template.md` | Weekly deep dive + 1-page shareable summary template. |
 
