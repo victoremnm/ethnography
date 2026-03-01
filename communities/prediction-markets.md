@@ -14,8 +14,43 @@ Prediction markets are platforms where participants buy and sell contracts tied 
 | **Kalshi** | Regulated US exchange (CFTC) | ~17% CT mindshare; structured safety, more accessible to retail |
 | **Manifold** | Social/play-money | Research-oriented; real-money features largely dormant as of 2025 |
 | **Metaculus** | Aggregated forecasting, no real money | Elite forecaster community; longest calibration track record |
+| **OpinionLabs** | Decentralized, BNB Chain focus | The "Eastern" counterpart; AI-scaled long-tail markets; volume leader in Asia |
 
 **The 2026 dynamic**: Polymarket vs. Kalshi is a 4:1 CT mindshare split (Kaito data, 24H window: 69.51% vs 17.36%). Both platforms are growing; the competition is real but Polymarket's on-chain volume is an order of magnitude larger.
+
+---
+
+## OpinionLabs (The Eastern Counterpart)
+
+While Polymarket dominates the Western/Global narrative, **OpinionLabs (O.LAB)** has emerged as the volume leader in Asia (BNB Chain, Mantle, opBNB).
+
+**Key Differentiators:**
+1.  **AI-Powered Long-Tail:** Uses AI oracles to automate market creation and settlement for niche events (local gossip, regional esports) that Western platforms ignore.
+2.  **Content-First:** The "AlphaOrBeta" app serves as a gamified, social top-of-funnel that feeds users into the financialized O.LAB markets.
+3.  **Fee Capture:** Unlike Polymarket's growth-first zero-fee model, OpinionLabs generated $13M+ in protocol fees by Jan 2026.
+
+**Risks (Devil's Advocate):**
+- **Wash Trading:** On-chain analysis suggests trade sizes 13-25x larger than competitors, hinting at "airdrop farming."
+- **Oracle Failures:** The **Jan 1, 2026 "Context Contamination" incident** saw AI oracles settle markets incorrectly based on poisoned open-source data.
+- **Regulatory Arbitrage:** No-KYC structure on BNB Chain invites eventual regulatory crackdown.
+
+---
+
+## Primary Source Index (2026 Prediction Markets)
+
+- **On-Chain Audit:** [Dune Analytics: "Is Opinion Lab's $8B Volume Real?"](https://dune.com/datadashboards) (Feb 23, 2026).
+- **Social Hub:** [@vitalik.eth on Farcaster](https://warpcast.com/vitalik.eth) — Primary source for d/acc and "epistemic infrastructure" discourse.
+- **Leaderboard:** [Kaito Information Markets](https://kaito.ai) — Real-time mindshare tracking for platforms and creators.
+
+---
+
+## Contested Views: Building Around the Periphery
+
+### The Wash-Trading Reality
+The Feb 23 Dune Report confirms that OpinionLabs' volume is largely illusory.
+- **Fact-Check:** OpinionLabs produced 31% of industry volume with **<3% of total transactions**.
+- **The "Points Trap":** Much of this volume is high-value addresses (likely bots/farmers) cycling capital to maximize airdrop points.
+- **Epistemic Dilution:** While Polymarket serves as a "truth machine," OpinionLabs currently functions as a **"liquidity machine."** Its prices are less a reflection of crowd wisdom and more a reflection of farming efficiency.
 
 ---
 

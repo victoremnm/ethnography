@@ -41,11 +41,14 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `cedh-community.md` | Analogy | Competitive subculture |
 | `lambda-phi-epsilon.md` | Active | Initiation culture |
 | `crypto-twitter.md` | Active | 5, 8 |
-| **Farcaster / Warpcast** | 🔴 Missing | 5, 7 |
-| **DeSci** | 🔴 Missing | 2, 5 |
-| **Open-Source AI** | 🔴 Missing | 1, 2 |
-| **RWA / Stablecoin** | 🔴 Missing | 5 |
-| **Regulatory Layer** | 🔴 Missing | 5, 6 |
+| `network-states.md` | Active | 5, 6 |
+| `proof-of-personhood.md` | Active | 5, 9 |
+| `agentic-governance.md` | Active | 7, 5 |
+| **Farcaster / Warpcast** | Missing | 5, 7 |
+| **DeSci** | Missing | 2, 5 |
+| **Open-Source AI** | Missing | 1, 2 |
+| **RWA / Stablecoin** | Missing | 5 |
+| **Regulatory Layer** | Missing | 5, 6 |
 
 ### `sources/` — Evidence Base
 
@@ -55,6 +58,7 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `ai-substack-discourse.md` | Four-tier Substack map (thesis formation → counter-discourse). |
 | `seed-lists.md` | Tiered Twitter/X handles, Telegram observation points, market data sources. |
 | `analytical-lenses-troemel-contrapoints.md` | Brad Troemel (attention-as-sport) and ContraPoints (aesthetic radicalization pipeline) as analytical lenses. |
+| `deep-reads/` | Full-text extractions and multimedia summaries. |
 
 ### `reports/` — Synthesized Intelligence
 
@@ -63,6 +67,17 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 | `where-the-puck-goes.md` | Strategic synthesis — AI/crypto/prediction market convergence and positioning. |
 | `forward-deployed-engineers.md` | FDE model deep dive — Palantir origin, diffusion across enterprise AI. |
 | `template.md` | Weekly deep dive + 1-page shareable summary template. |
+
+---
+
+## Spectrum Map: The 2026 Techno-Capital Ecosystem
+
+| Quadrant | Core Thesis | Primary Community | Key Conflict (2026) |
+|----------|-------------|-------------------|----------------------|
+| **The Accelerationist Layer** | "Accelerate or Die" | **e/acc** / AI Maxxers | **Institutional Hollowing** vs. **Thermodynamic Vitalism** |
+| **The Attention Layer** | "Attention = Value" | **Memecoins** / CT | **Speculative Alpha** vs. **KOL Wash-Trading** |
+| **The Epistemic Layer** | "Markets = Truth" | **Prediction Markets** | **Western Epistemics** (Polymarket) vs. **Eastern Liquidity** (O.LAB) |
+| **The Sovereignty Layer** | "Self-Sovereignty" | **d/acc** / Network States | **AI Agent Autonomy** vs. **Human Biometric Gating** |
 
 ---
 
@@ -94,12 +109,12 @@ See `theory/argument-map.md` for full analysis. Current heat map:
 
 | Debate | Heat |
 |--------|------|
-| Can AI self-regulate? (e/acc vs EA) | 🔥🔥 |
-| Exit or transform? (NRx vs L/ACC) | 🔥 |
-| Can markets replace epistemics? | 🔥 |
-| Is agent autonomy real or performed? | 🔥 |
-| Who is "permissionless" for? | 🌡 |
-| Open vs. closed AI (emerging) | 🌡 |
+| Can AI self-regulate? (e/acc vs EA) | High |
+| Exit or transform? (NRx vs L/ACC) | Medium |
+| Can markets replace epistemics? | Medium |
+| Is agent autonomy real or performed? | Medium |
+| Who is "permissionless" for? | Low-Medium |
+| Open vs. closed AI (emerging) | Low-Medium |
 
 ---
 

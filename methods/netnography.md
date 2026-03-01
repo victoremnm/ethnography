@@ -62,6 +62,27 @@ State your analytical position when your position might affect the reading.
 
 ---
 
+## The "Adversarial Fact-Checking" Protocol
+
+To prevent echo-chamber analysis, every community deep-dive must undergo a **"Refute/Contest"** stress test.
+
+### 1. Identify the "Success Narrative"
+Isolate the primary claim the community makes about itself.
+- *Example:* "AI Agents are sovereign economic actors."
+- *Example:* "Prediction markets are unbiased truth machines."
+
+### 2. Seek the "Counter-Signal"
+Find the data point that contradicts the narrative.
+- *Technique:* **On-Chain Forensics.** If the narrative is "volume," check unique wallet count. (e.g., OpinionLabs: $8B volume but <3% of transactions = wash trading).
+- *Technique:* **Infrastructure Audit.** If the narrative is "sovereignty," check the dependencies. (e.g., Agents rely on centralized APIs = "API Tether" risk).
+
+### 3. Narrative-as-a-Judge
+Use trusted critical voices to evaluate the claim.
+- *Action:* Cross-reference community claims with skeptics outside the consensus (e.g., Zvi Mowshowitz for prediction markets, Molly White for crypto).
+- *Output:* A dedicated "Contested Views" section in every research document.
+
+---
+
 ## The Summarize CLI in Research Workflow
 
 The `summarize` tool (`npm i -g @steipete/summarize`) is the primary method for source ingestion. It accepts URLs, YouTube videos, Substacks, and PDFs.
@@ -117,7 +138,7 @@ Known gaps — address via `/ethnography-ingest` or new community profiles:
 
 **Missing theory documents:**
 - [ ] `theory/temporal-map.md` — emergence/peak/cooling timeline for each community
-- [x] `theory/argument-map.md` — fault lines and active debates ✓
+- [x] `theory/argument-map.md` — fault lines and active debates
 
 **Missing source entries in canonical-texts.md:**
 - [ ] Thread 2 (EA/Longtermism) — no entries yet

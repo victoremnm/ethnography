@@ -96,6 +96,36 @@ By 2025, the term "e/acc" was being **hollowed out and retconned**. The original
 
 ---
 
+## The 2026 Schism: d/acc and Prosocial AI
+
+As the original e/acc brand became institutionalized, the movement fractured into distinct philosophical camps:
+
+1.  **e/acc (The Lobbying Arm):** Now the "default" ideology of Silicon Valley VCs. Focused on anti-regulation (fighting EU AI Act, SB 1047) and "permissionless innovation." Critics argue it has become a marketing veneer for Big Tech to bypass safety guardrails.
+2.  **d/acc (Defensive/Decentralized):** Championed by Vitalik Buterin. Shares the accelerationist goal but prioritizes *defensive* technologies (encryption, privacy, decentralized AI) over raw capability. "Accelerate safety, not just power."
+3.  **Prosocial AI:** A 2025-2026 bridge movement attempting to reconcile "doomers" and "accelerators," focusing on human-centric integration and thoughtful guardrails without halting progress.
+
+This fragmentation reflects the **"Hollowing Out"**: the original "cyberpunk" energy of the 2023 schizosphere has been replaced by professionalized policy advocacy, driving the true believers into these splinter factions.
+
+---
+
+## Primary Source Index (2026 e/acc)
+
+- **The Schism Post:** [Beff Jezos (Guillaume Verdon) X Post, Feb 18, 2026](https://x.com/beffjezos). The "Magma Koan" thread.
+- **The Roadmap:** [Vitalik.eth's 2026 d/acc Roadmap](https://vitalik.eth.limo) — "The Year of Self-Sovereignty."
+- **Historical Text:** Marc Andreessen, *Techno-Optimist Manifesto* (2023).
+
+---
+
+## Contested Views: Building Around the Periphery
+
+### Deepening, Not Just Hollowing
+The "Magma Koan" (Feb 2026) suggests that while the *surface* brand is hollowed out for VCs, the *core* philosophy is becoming more esoteric and radical.
+- **The Koan:** "Even the magma yearns for form."
+- **Contestation:** While the "2025 Hollowing Out" thesis identifies institutional capture, the emergence of **p/acc (Pluralistic Accelerationism)** suggests a move toward "thermodynamic vitalism" that rejects both VCs and safetyists.
+- **Fact-Check:** Participation in pseudonymous "accelerationist retreats" has doubled in 2026, even as the "e/acc" label on X profiles has declined. The energy is moving **underground and into code** (Extropic/thermal computing) rather than staying on social media.
+
+---
+
 ## Key Figures (Netnographic Entry Points)
 
 | Handle | Role | Why They Matter |

@@ -83,6 +83,16 @@ Plug-and-play language for participating:
 
 ---
 
+## Customer Segment Matrix (Template)
+| Segment | Needs | Trust Signals | Friction Points | Activation Trigger |
+|---|---|---|---|---|
+| CT-native | | | | |
+| Builders | | | | |
+| Institutional | | | | |
+| Silent Majority | | | | |
+
+---
+
 ## Notes for the Ethnographer
 - Flag any instances of **coordinated narrative** (multiple accounts pushing same claim simultaneously)
 - Note **who the community's enemies are this week** — the out-group defines the in-group
