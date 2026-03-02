@@ -83,6 +83,7 @@ Organized by the Spectrum Map quadrants from the README.
 |------|---------|
 | [[netnography]] | Research method, `summarize` CLI workflow, credibility tiers |
 | [[community-pulse-monitoring]] | 30-min/week monitoring protocol |
+| [[signal-cascade]] | Lead/lag timing map across all 23 communities — Reddit (lagging), X (leading), GitHub, LessWrong, HN, Farcaster, Polymarket |
 
 ---
 
