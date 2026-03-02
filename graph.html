@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ethnography Knowledge Graph</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0f1a;
+    color: #e2e8f0;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  svg { width: 100vw; height: 100vh; }
+
+  .link {
+    stroke-opacity: 0.35;
+    stroke-width: 1.2;
+  }
+
+  .node circle {
+    stroke-width: 1.5;
+    cursor: pointer;
+    transition: r 0.15s ease;
+  }
+
+  .node circle:hover { stroke-width: 3; }
+
+  .node text {
+    font-size: 10px;
+    fill: #cbd5e0;
+    pointer-events: none;
+    text-shadow: 0 1px 3px #0f0f1a, 0 -1px 3px #0f0f1a, 1px 0 3px #0f0f1a, -1px 0 3px #0f0f1a;
+  }
+
+  #tooltip {
+    position: absolute;
+    background: rgba(15, 15, 26, 0.95);
+    border: 1px solid #4a5568;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 1.7;
+    pointer-events: none;
+    max-width: 260px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 10;
+  }
+
+  #tooltip .tt-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #f7fafc;
+  }
+
+  #tooltip .tt-group {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  #tooltip .tt-threads {
+    color: #90cdf4;
+    font-size: 11px;
+  }
+
+  #tooltip .tt-connections {
+    color: #68d391;
+    font-size: 11px;
+    margin-top: 3px;
+  }
+
+  #legend {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: rgba(15, 15, 26, 0.88);
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 11px;
+    line-height: 2;
+  }
+
+  #legend h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #718096;
+    margin-bottom: 6px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.1s;
+  }
+
+  .legend-item:hover { opacity: 1; }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  #info {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    color: #4a5568;
+    font-size: 10px;
+    line-height: 1.8;
+  }
+
+  #search-box {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: rgba(15, 15, 26, 0.88);
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+
+  #search-box input {
+    background: transparent;
+    border: none;
+    color: #e2e8f0;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+    width: 180px;
+  }
+
+  #search-box input::placeholder { color: #4a5568; }
+
+  .node.dimmed circle { opacity: 0.12; }
+  .node.dimmed text { opacity: 0.08; }
+  .link.dimmed { opacity: 0.04; }
+
+  .node.highlighted circle { stroke-width: 3; }
+</style>
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<div id="legend">
+  <h3>Layers</h3>
+  <div class="legend-item" data-group="accelerationist"><div class="legend-dot" style="background:#e07b39"></div>Accelerationist</div>
+  <div class="legend-item" data-group="attention"><div class="legend-dot" style="background:#c44569"></div>Attention</div>
+  <div class="legend-item" data-group="epistemic"><div class="legend-dot" style="background:#7c83d4"></div>Epistemic</div>
+  <div class="legend-item" data-group="sovereignty"><div class="legend-dot" style="background:#2ecc71"></div>Sovereignty</div>
+  <div class="legend-item" data-group="infrastructure"><div class="legend-dot" style="background:#3498db"></div>Infrastructure</div>
+  <div class="legend-item" data-group="publicgoods"><div class="legend-dot" style="background:#1abc9c"></div>Public Goods</div>
+  <div class="legend-item" data-group="counter"><div class="legend-dot" style="background:#95a5a6"></div>Counter-discourse</div>
+  <div class="legend-item" data-group="theory"><div class="legend-dot" style="background:#f39c12"></div>Theory</div>
+  <div class="legend-item" data-group="report"><div class="legend-dot" style="background:#9b59b6"></div>Reports</div>
+</div>
+
+<div id="search-box">
+  <input type="text" id="search" placeholder="Search community…">
+</div>
+
+<div id="info">
+  Drag to pan · Scroll to zoom · Click to focus · Click legend to filter
+</div>
+
+<svg id="graph"></svg>
+
+<script>
+const COLOR = {
+  accelerationist: "#e07b39",
+  attention:       "#c44569",
+  epistemic:       "#7c83d4",
+  sovereignty:     "#2ecc71",
+  infrastructure:  "#3498db",
+  publicgoods:     "#1abc9c",
+  counter:         "#95a5a6",
+  theory:          "#f39c12",
+  report:          "#9b59b6",
+};
+
+const nodes = [
+  // Theory
+  { id: "philosophical-roots",  label: "Philosophical Roots",     group: "theory",          threads: "backbone — 11 threads" },
+  { id: "argument-map",         label: "Argument Map",            group: "theory",          threads: "fault lines" },
+
+  // Reports
+  { id: "where-the-puck-goes",        label: "Where the Puck Goes",   group: "report", threads: "strategic synthesis" },
+  { id: "game-theory-synthesis",      label: "Game Theory Synthesis", group: "report", threads: "payoff structures" },
+  { id: "forward-deployed-engineers", label: "FDE Deep Dive",          group: "report", threads: "Palantir → enterprise AI" },
+
+  // Accelerationist Layer
+  { id: "ai-maxxers",       label: "AI Maxxers / e/acc",  group: "accelerationist", threads: "1, 3, 6" },
+  { id: "a16z-ecosystem",   label: "a16z Ecosystem",       group: "accelerationist", threads: "1, 5, 6" },
+  { id: "ai-agent-tokens",  label: "AI Agent Tokens",      group: "accelerationist", threads: "7, 8" },
+  { id: "open-source-ai",   label: "Open-Source AI",       group: "accelerationist", threads: "1, 2, 5, 10" },
+
+  // Attention Layer
+  { id: "memecoin-culture", label: "Memecoin Culture",    group: "attention", threads: "8" },
+  { id: "crypto-twitter",   label: "Crypto Twitter",       group: "attention", threads: "5, 8" },
+  { id: "politifi",         label: "PolitiFi",             group: "attention", threads: "8, 6, 5" },
+  { id: "tiktok-creators",  label: "TikTok Creators",      group: "attention", threads: "8" },
+  { id: "groyper-pipeline", label: "Groyper Pipeline",     group: "attention", threads: "6, 1, 8" },
+
+  // Epistemic Layer
+  { id: "prediction-markets", label: "Prediction Markets", group: "epistemic", threads: "4, 3" },
+  { id: "hyperliquid",         label: "Hyperliquid",        group: "epistemic", threads: "5, 3, 8" },
+
+  // Sovereignty Layer
+  { id: "network-states",       label: "Network States",      group: "sovereignty", threads: "5, 6" },
+  { id: "farcaster-warpcast",   label: "Farcaster / Warpcast", group: "sovereignty", threads: "5, 7" },
+  { id: "proof-of-personhood",  label: "Proof of Personhood", group: "sovereignty", threads: "5, 9" },
+  { id: "agentic-governance",   label: "Agentic Governance",  group: "sovereignty", threads: "7, 5" },
+
+  // Infrastructure Layer
+  { id: "solana-dev-culture", label: "Solana Dev Culture",  group: "infrastructure", threads: "3, 5, 7" },
+  { id: "rwa-stablecoin",     label: "RWA / Stablecoin",    group: "infrastructure", threads: "5, 4, 6" },
+  { id: "regulatory-layer",   label: "Regulatory Layer",    group: "infrastructure", threads: "5, 6, 4" },
+
+  // Public Goods
+  { id: "desci",          label: "DeSci",              group: "publicgoods", threads: "5, 2, 3" },
+  { id: "refi-public-goods", label: "ReFi / Public Goods", group: "publicgoods", threads: "10, 2, 4" },
+
+  // Counter-discourse
+  { id: "red-pill-black-pill", label: "Red Pill / Black Pill", group: "counter", threads: "6, 8" },
+];
+
+const links = [
+  // Theory backbone
+  { source: "philosophical-roots",  target: "argument-map" },
+  { source: "argument-map",         target: "where-the-puck-goes" },
+  { source: "where-the-puck-goes",  target: "game-theory-synthesis" },
+
+  // Theory → communities (via primary thread)
+  { source: "philosophical-roots", target: "ai-maxxers" },
+  { source: "philosophical-roots", target: "a16z-ecosystem" },
+  { source: "philosophical-roots", target: "prediction-markets" },
+  { source: "philosophical-roots", target: "network-states" },
+  { source: "philosophical-roots", target: "memecoin-culture" },
+
+  // From farcaster-warpcast (documented cross-refs)
+  { source: "farcaster-warpcast", target: "crypto-twitter" },
+  { source: "farcaster-warpcast", target: "a16z-ecosystem" },
+  { source: "farcaster-warpcast", target: "ai-agent-tokens" },
+  { source: "farcaster-warpcast", target: "solana-dev-culture" },
+  { source: "farcaster-warpcast", target: "prediction-markets" },
+
+  // From solana-dev-culture
+  { source: "solana-dev-culture", target: "memecoin-culture" },
+  { source: "solana-dev-culture", target: "ai-agent-tokens" },
+  { source: "solana-dev-culture", target: "prediction-markets" },
+
+  // From open-source-ai
+  { source: "open-source-ai", target: "a16z-ecosystem" },
+  { source: "open-source-ai", target: "desci" },
+  { source: "open-source-ai", target: "solana-dev-culture" },
+  { source: "open-source-ai", target: "refi-public-goods" },
+
+  // From rwa-stablecoin
+  { source: "rwa-stablecoin", target: "regulatory-layer" },
+  { source: "rwa-stablecoin", target: "solana-dev-culture" },
+  { source: "rwa-stablecoin", target: "a16z-ecosystem" },
+  { source: "rwa-stablecoin", target: "network-states" },
+
+  // From groyper-pipeline
+  { source: "groyper-pipeline", target: "memecoin-culture" },
+  { source: "groyper-pipeline", target: "red-pill-black-pill" },
+
+  // Natural overlaps (strongly implied in profiles)
+  { source: "ai-maxxers",       target: "a16z-ecosystem" },
+  { source: "ai-agent-tokens",  target: "agentic-governance" },
+  { source: "crypto-twitter",   target: "memecoin-culture" },
+  { source: "desci",            target: "refi-public-goods" },
+  { source: "politifi",         target: "regulatory-layer" },
+  { source: "politifi",         target: "memecoin-culture" },
+  { source: "network-states",   target: "proof-of-personhood" },
+  { source: "hyperliquid",      target: "prediction-markets" },
+  { source: "regulatory-layer", target: "a16z-ecosystem" },
+  { source: "agentic-governance", target: "ai-agent-tokens" },
+
+  // Game theory report connections
+  { source: "game-theory-synthesis", target: "solana-dev-culture" },
+  { source: "game-theory-synthesis", target: "refi-public-goods" },
+  { source: "game-theory-synthesis", target: "regulatory-layer" },
+  { source: "game-theory-synthesis", target: "memecoin-culture" },
+  { source: "game-theory-synthesis", target: "politifi" },
+];
+
+// ── Build adjacency for connection counts ──────────────────────────────────
+const connectionCount = {};
+nodes.forEach(n => { connectionCount[n.id] = 0; });
+links.forEach(l => {
+  connectionCount[l.source] = (connectionCount[l.source] || 0) + 1;
+  connectionCount[l.target] = (connectionCount[l.target] || 0) + 1;
+});
+
+// ── Radius scale ───────────────────────────────────────────────────────────
+const rScale = d3.scaleSqrt()
+  .domain([0, d3.max(Object.values(connectionCount))])
+  .range([5, 18]);
+
+// ── SVG setup ──────────────────────────────────────────────────────────────
+const svg = d3.select("#graph");
+const width  = window.innerWidth;
+const height = window.innerHeight;
+
+const container = svg.append("g").attr("class", "container");
+
+svg.call(d3.zoom()
+  .scaleExtent([0.2, 4])
+  .on("zoom", e => container.attr("transform", e.transform))
+);
+
+// ── Force simulation ───────────────────────────────────────────────────────
+const simulation = d3.forceSimulation(nodes)
+  .force("link",   d3.forceLink(links).id(d => d.id).distance(120).strength(0.4))
+  .force("charge", d3.forceManyBody().strength(-320))
+  .force("center", d3.forceCenter(width / 2, height / 2))
+  .force("collision", d3.forceCollide().radius(d => rScale(connectionCount[d.id]) + 14));
+
+// ── Draw links ─────────────────────────────────────────────────────────────
+const link = container.append("g")
+  .selectAll("line")
+  .data(links)
+  .join("line")
+  .attr("class", "link")
+  .attr("stroke", d => {
+    const src = nodes.find(n => n.id === d.source.id || n.id === d.source);
+    return src ? COLOR[src.group] : "#4a5568";
+  });
+
+// ── Draw nodes ─────────────────────────────────────────────────────────────
+const node = container.append("g")
+  .selectAll("g")
+  .data(nodes)
+  .join("g")
+  .attr("class", "node")
+  .call(d3.drag()
+    .on("start", (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on("drag",  (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on("end",   (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+  );
+
+node.append("circle")
+  .attr("r",    d => rScale(connectionCount[d.id]))
+  .attr("fill", d => COLOR[d.group] + "33")
+  .attr("stroke", d => COLOR[d.group]);
+
+node.append("text")
+  .attr("dy", d => rScale(connectionCount[d.id]) + 12)
+  .attr("text-anchor", "middle")
+  .text(d => d.label);
+
+// ── Tooltip ────────────────────────────────────────────────────────────────
+const tooltip = d3.select("#tooltip");
+const neighborIds = new Set();
+
+node
+  .on("mouseover", (e, d) => {
+    const conns = links.filter(l =>
+      (l.source.id || l.source) === d.id || (l.target.id || l.target) === d.id
+    );
+    const connectedTo = conns.map(l => {
+      const other = (l.source.id || l.source) === d.id ? (l.target.id || l.target) : (l.source.id || l.source);
+      return nodes.find(n => n.id === other)?.label;
+    }).filter(Boolean).join(", ");
+
+    tooltip
+      .style("opacity", 1)
+      .html(`
+        <div class="tt-title">${d.label}</div>
+        <div class="tt-group" style="color:${COLOR[d.group]}">${d.group}</div>
+        <div class="tt-threads">Threads: ${d.threads}</div>
+        <div class="tt-connections">↔ ${connectionCount[d.id]} connections</div>
+        ${connectedTo ? `<div style="color:#718096;font-size:10px;margin-top:4px">${connectedTo}</div>` : ""}
+      `);
+  })
+  .on("mousemove", e => {
+    tooltip
+      .style("left",  (e.pageX + 14) + "px")
+      .style("top",   (e.pageY - 28) + "px");
+  })
+  .on("mouseout", () => tooltip.style("opacity", 0))
+  .on("click", (e, d) => {
+    e.stopPropagation();
+    highlightNeighborhood(d);
+  });
+
+svg.on("click", () => clearHighlight());
+
+// ── Highlight neighborhood ─────────────────────────────────────────────────
+function highlightNeighborhood(d) {
+  const connected = new Set([d.id]);
+  links.forEach(l => {
+    const s = l.source.id || l.source;
+    const t = l.target.id || l.target;
+    if (s === d.id) connected.add(t);
+    if (t === d.id) connected.add(s);
+  });
+
+  node.classed("dimmed",      n => !connected.has(n.id))
+      .classed("highlighted", n => n.id === d.id);
+  link.classed("dimmed", l => {
+    const s = l.source.id || l.source;
+    const t = l.target.id || l.target;
+    return !connected.has(s) || !connected.has(t);
+  });
+}
+
+function clearHighlight() {
+  node.classed("dimmed", false).classed("highlighted", false);
+  link.classed("dimmed", false);
+}
+
+// ── Legend filter ──────────────────────────────────────────────────────────
+let activeGroup = null;
+d3.selectAll(".legend-item").on("click", function() {
+  const g = this.dataset.group;
+  if (activeGroup === g) {
+    activeGroup = null;
+    clearHighlight();
+  } else {
+    activeGroup = g;
+    node.classed("dimmed",      n => n.group !== g)
+        .classed("highlighted", n => n.group === g);
+    link.classed("dimmed", l => {
+      const s = nodes.find(n => n.id === (l.source.id || l.source));
+      const t = nodes.find(n => n.id === (l.target.id || l.target));
+      return s?.group !== g && t?.group !== g;
+    });
+  }
+});
+
+// ── Search ────────────────────────────────────────────────────────────────
+d3.select("#search").on("input", function() {
+  const q = this.value.toLowerCase().trim();
+  if (!q) { clearHighlight(); return; }
+  const matched = nodes.filter(n =>
+    n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)
+  );
+  if (matched.length === 0) return;
+  const matchedIds = new Set(matched.map(n => n.id));
+
+  const connected = new Set(matchedIds);
+  links.forEach(l => {
+    const s = l.source.id || l.source;
+    const t = l.target.id || l.target;
+    if (matchedIds.has(s)) connected.add(t);
+    if (matchedIds.has(t)) connected.add(s);
+  });
+
+  node.classed("dimmed",      n => !connected.has(n.id))
+      .classed("highlighted", n => matchedIds.has(n.id));
+  link.classed("dimmed", l => {
+    const s = l.source.id || l.source;
+    const t = l.target.id || l.target;
+    return !connected.has(s) || !connected.has(t);
+  });
+});
+
+// ── Simulation tick ────────────────────────────────────────────────────────
+simulation.on("tick", () => {
+  link
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+
+  node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+window.addEventListener("resize", () => {
+  simulation.force("center", d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+  simulation.alpha(0.1).restart();
+});
+</script>
+</body>
+</html>
