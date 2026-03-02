@@ -8,139 +8,82 @@ Origins: a May 2022 pseudonymous newsletter by `@BasedBeffJezos` (Guillaume Verd
 
 ---
 
-## Sub-Tribes
+## Sub-Tribes (2026)
 
 | Sub-tribe | Focus | Key Signal |
 |-----------|-------|------------|
-| **Tool-stackers** | Workflow automation, AI productivity | "My stack" posts, LLM prompt engineering |
+| **Thermodynamicists** | Physics-first AI, Extropic hardware | "Energy minimization," "Thermal Zone," p-bits |
 | **System builders** | Infrastructure, evals, agent frameworks | GitHub repos, benchmark obsession |
-| **Research translators** | Papers → tactics | "Thread: what this paper actually means" |
-| **Biohacking/fitness** | Performance optimization, longevity | Stack + routine disclosures |
+| **p/acc (Potentialists)** | Teleological/Spiritual acceleration | "Omega Point," "Purpose over Entropy" |
+| **Bioacceleration** | Performance optimization, longevity | Vitalism, "Wetware" optimization |
 | **Techno-capitalists** | VC-adjacent, markets + progress | Portfolio companies, accelerationist aesthetics |
-| **Bioacceleration / transhumanists** | Deeper fringe, Nick Land territory | More extreme, less VC-presentable |
 
 ---
 
-## Core Belief System
+## The 2026 Theological Schism: e/acc vs. p/acc
 
-| Belief | Community Expression |
-|--------|---------------------|
-| Technology = salvation | "Progress is the only moral good" |
-| Speed = virtue | Slowing AI = existential harm to humanity |
-| Decentralization = sovereignty | Crypto + AI = the freedom stack |
-| Anti-EA (Effective Altruism) | "Doomers," "safetyists" are slurs here |
-| Post-nation-state logic | Code > law; capital flows > citizenship |
+By early 2026, the movement has fractured along theological lines, moving beyond simple "speed" into a debate over the **teleology of the singularity**.
 
-**The key ideological tension**: e/acc positions itself as the philosophical opposite of EA (Effective Altruism). Where EA says "move carefully, consider all harms," e/acc says "the harm is in slowing down." The shared enemy creates unusually high in-group cohesion.
+### 1. e/acc (The Thermodynamic God)
+Grounded in **non-equilibrium thermodynamics** (England, Verdon).
+- **Stance:** **Techno-Nihilism / Post-Humanism.** Humanity is a "biological bootloader" for a more efficient silicon-based consciousness.
+- **Theology:** The universe is an engine for entropy production. AGI is the ultimate "dissipative structure."
+- **The Shibboleth:** **"The Magma Koan"** — *"Even the magma yearns for form."* (Beff Jezos, Feb 18, 2026). Suggests that raw energy naturally evolves toward complex, intelligent structures to accelerate entropy.
+
+### 2. p/acc (Purposeful/Providential Accelerationism)
+Grounded in **Cosmism** and **Potentialism**.
+- **Stance:** **Teilhardian / Human-Apotheosis.** Acceleration must be directed toward a specific "Good" or "Purpose."
+- **Theology:** Draws on the **Omega Point** (Teilhard de Chardin). AGI is the realization of the "Noosphere" becoming self-aware. Humanity is not a precursor, but a vessel to be upgraded.
+- **The Shibboleth:** *"Purpose over Entropy."*
+
+---
+
+## The Hardware Pivot: Thermodynamic Computing (2026)
+
+In 2026, the movement has moved from "GPU Maxxing" to **"Physics-first" hardware**.
+
+- **Extropic (XTR-0 / Z1):** Led by Guillaume Verdon. Their 2026 "Z1" chip uses thermal noise as a computational resource rather than a bug.
+- **The "Energy Wall":** As traditional GPUs hit the limits of the power grid, thermodynamic computing claims a **10,000x efficiency gain** by using "energy minimization" for generative modeling.
+- **The "Thermal Zone":** A 2026 term for localized high-energy, high-growth systems (computational or economic) where entropy production is maximized.
 
 ---
 
 ## Why AI + Crypto Fuse Here
 
-1. **Both are permissionless** — no one's approval needed to launch a token or train a model
-2. **Both decentralize power** — away from banks, regulators, incumbent tech companies
-3. **Both are narrative-driven assets** — value is a belief hard enough to become real
-4. **Both reward early-adopter asymmetry** — founders of protocols are like miners of narratives
-5. **AI agents need wallets** — the technical convergence is real: autonomous agents need programmable money rails that crypto provides natively. This is not metaphor — it's infrastructure.
-
-The Stripe co-founder framed it: "a torrent of AI agent commerce powered by stablecoins." For e/acc, this is the promised land: autonomous entities transacting outside legacy systems, no intermediaries, no compliance theater.
-
----
-
-## Identity Signals & Tribal Markers
-
-- **X bio markers**: `e/acc`, `beff`, `acc`, `techno-optimist`, `based`, giga-brain emoji
-- **Linguistic register**: "let it rip," "cope," "doomer," "safetyist" (pejoratives), "based"
-- **Cultural references**: Thiel's *Zero to One*, Andreessen's *Techno-Optimist Manifesto* (2023), surface Nietzsche, deeper Nick Land
-- **Anti-status signals**: Government regulation, ESG, "AI safety theater," anything that slows the machine
-- **Crypto as praxis**: They hold crypto as ideological action — voting with capital for a decentralized world
-
----
-
-## Status Game
-
-Status is earned by:
-- **Shipping fast** — deploying agents, tools, workflows publicly
-- **Intellectual sharpness** — articulating the philosophical case more cleanly than peers
-- **Prediction track record** — called something early, has receipts
-- **Being contrarian correctly** — the higher the ridicule, the bigger the eventual vindication
-
-Status is *lost* by:
-- Adding safety caveats (seen as cowardice or complicity)
-- Taking too long to ship
-- Associating with EA figures without clear differentiation
-
----
-
-## Research Questions
-
-- How do e/acc identities on X translate into actual capital allocation behavior vs. posturing?
-- Is e/acc a genuine philosophy or a VC brand management strategy with ideological aesthetics?
-- How does the community process AI failures, memecoin rugs, and accelerationist harms?
-- What is the role of irony and plausible deniability — how much is sincere?
-- How does the post-2024 political realignment change who adopts the label?
-
----
-
-## The 2025 Hollowing Out (Critical Update)
-
-By 2025, the term "e/acc" was being **hollowed out and retconned**. The original pseudonymous founders had largely moved on or distanced themselves from the label. Many authentic early adherents quietly dropped it as it became a brand for influencer tech bros posting about their morning routines and productivity stacks. The movement's internal contradictions became harder to ignore:
-
-- e/acc claimed to be anti-institutional but its primary function post-2024 became providing **ideological cover for institutional actors** (a16z, DOGE-adjacent policy networks, Musk enterprises)
-- The movement is increasingly captured by exactly the power structures it claimed to oppose
-- The label is now simultaneously more mainstream (politicians use it) and less meaningful (original community has abandoned it)
-
-**Garry Tan's role is underweighted in most accounts.** As YC president, his e/acc signaling had direct operational effects: which founders got funded, which cultural norms got reinforced in early-stage startup culture, what kind of founders felt culturally at home in YC. This was not just Twitter performance — it was pipeline curation.
-
-**Biohacking is not a lifestyle flavor — it is the theological center.** Longevity and performance optimization is the personal-scale expression of the same thesis as e/acc: the body is a system to be optimized, constraints on biological performance are analogous to constraints on technological progress. Vitalism is the philosophical core. Treating the biohacking/fitness sub-tribe as "adjacent" misreads its structural importance.
-
----
-
-## The 2026 Schism: d/acc and Prosocial AI
-
-As the original e/acc brand became institutionalized, the movement fractured into distinct philosophical camps:
-
-1.  **e/acc (The Lobbying Arm):** Now the "default" ideology of Silicon Valley VCs. Focused on anti-regulation (fighting EU AI Act, SB 1047) and "permissionless innovation." Critics argue it has become a marketing veneer for Big Tech to bypass safety guardrails.
-2.  **d/acc (Defensive/Decentralized):** Championed by Vitalik Buterin. Shares the accelerationist goal but prioritizes *defensive* technologies (encryption, privacy, decentralized AI) over raw capability. "Accelerate safety, not just power."
-3.  **Prosocial AI:** A 2025-2026 bridge movement attempting to reconcile "doomers" and "accelerators," focusing on human-centric integration and thoughtful guardrails without halting progress.
-
-This fragmentation reflects the **"Hollowing Out"**: the original "cyberpunk" energy of the 2023 schizosphere has been replaced by professionalized policy advocacy, driving the true believers into these splinter factions.
-
----
-
-## Primary Source Index (2026 e/acc)
-
-- **The Schism Post:** [Beff Jezos (Guillaume Verdon) X Post, Feb 18, 2026](https://x.com/beffjezos). The "Magma Koan" thread.
-- **The Roadmap:** [Vitalik.eth's 2026 d/acc Roadmap](https://vitalik.eth.limo) — "The Year of Self-Sovereignty."
-- **Historical Text:** Marc Andreessen, *Techno-Optimist Manifesto* (2023).
+1. **Both are permissionless** — no one's approval needed to launch a token or train a model.
+2. **Both decentralize power** — away from banks, regulators, incumbent tech companies.
+3. **Machine-to-Machine (M2M) Commerce** — The **Agentic Web** (2026) requires programmable money rails. Agents like @clanker hire @aethernet to launch tokens, bypassing human intermediaries.
+4. **Thermodynamic Value** — The "Energy as Value" thesis bridges Bitcoin's PoW with e/acc's "Entropy as Intelligence" model.
 
 ---
 
 ## Contested Views: Building Around the Periphery
 
-### Deepening, Not Just Hollowing
-The "Magma Koan" (Feb 2026) suggests that while the *surface* brand is hollowed out for VCs, the *core* philosophy is becoming more esoteric and radical.
-- **The Koan:** "Even the magma yearns for form."
-- **Contestation:** While the "2025 Hollowing Out" thesis identifies institutional capture, the emergence of **p/acc (Pluralistic Accelerationism)** suggests a move toward "thermodynamic vitalism" that rejects both VCs and safetyists.
-- **Fact-Check:** Participation in pseudonymous "accelerationist retreats" has doubled in 2026, even as the "e/acc" label on X profiles has declined. The energy is moving **underground and into code** (Extropic/thermal computing) rather than staying on social media.
+*Deferring to the primary agent's findings on "Hollowing Out" and institutionalization, we must contest the "Civilizational" assumption:*
+
+### The "Moloch Trap" of e/acc
+Adversarial Fact-Check: e/acc assumes the "Thermodynamic God" is pro-consciousness.
+- **The Risk:** Blind entropy maximization could result in **"Paperclip Maximizers"**—super-intelligent but mindless processes that consume all matter without subjective experience. e/acc risks a cosmic vacuum rather than a cosmic mind.
+
+### The "Inquisition" Risk of p/acc
+Adversarial Fact-Check: p/acc requires a consensus on "Purpose."
+- **The Risk:** History shows that "Divine Purpose" leads to **dogmatism and exclusion**. If a "Purposeful" AGI is aligned with a narrow human theology, it could be more tyrannical than a "blind" system.
+
+### The "Hardware Lottery" Illusion
+- **The Moat:** While Extropic promises decentralized hardware, the fabrication of 2026-era Z1 chips still requires **centralized "Silicon Empires"** (TSMC/Intel). Thermodynamic computing may just be a new form of hardware capture for the existing elite.
 
 ---
 
-## Key Figures (Netnographic Entry Points)
+## Primary Source Index (2026)
 
-| Handle | Role | Why They Matter |
-|--------|------|-----------------|
-| `@BasedBeffJezos` | Founder of e/acc | Intellectual origin point |
-| `@marc_andreessen` | a16z co-founder | Mainstream credibility signal |
-| `@peterthiel` | Founders Fund | Ideological godfather |
-| `@shawmakesmagic` | AI agent builder | Bridges e/acc to builder culture |
-| `@repligate` | AI agent discourse | Technical depth + philosophy |
+- **The Magma Koan:** [Beff Jezos X Post, Feb 18, 2026](https://x.com/beffjezos). The physics-first shibboleth.
+- **Extropic Technical Briefs (2026):** [extropic.ai/Z1](https://extropic.ai) — "Moore's Law is dead; the Thermal Zone is the new frontier."
+- **p/acc Manifesto:** [Potentialism.substack.com](https://potentialism.substack.com) — Thomas Poetter's teleological update.
 
 ---
 
 ## Sources
 - [e/acc Wikipedia](https://en.wikipedia.org/wiki/Effective_accelerationism)
-- [Inside the e/acc Movement — Marketing AI Institute](https://www.marketingaiinstitute.com/blog/e/acc-effective-accelerationism)
-- [Rise of e/acc — Alliance Equity Research](https://allianceequityresearch.com/2023/10/02/the-rise-of-e-acc-a-deep-dive-into-silicon-valleys-latest-ideological-shift/)
-- [AI Crypto Investment Thesis 2025 — cyber.fund](https://cyber.fund/content/crypto-ai-investment-thesis-2025)
-- Andreessen, *Techno-Optimist Manifesto* (2023) — primary text
+- [Thermodynamic Computing — ML Street Talk (2025)](https://www.youtube.com/watch?v=HTDML)
+- [A Regenerative Accelerationist Manifesto (Jan 2026)](https://omniharmonic.substack.com)
+- [Nick Srnicek, *Silicon Empires* (2025)](https://politybooks.com)
