@@ -178,13 +178,13 @@ Farcaster recruited heavily from CT and positioned itself as CT's more substanti
 
 Blockworks in 2024: "Farcaster, despite its promise for you to 'find your tribe,' does seem to limit those tribes to crypto ones." This is accurate and revealing — the community filtered for quality within a crypto frame, not outside it.
 
-**Cross-reference:** `communities/crypto-twitter.md`
+**Cross-reference:** [crypto-twitter](../communities/crypto-twitter.md)
 
 ### a16z Ecosystem (VC Architecture, Structural Tension)
 
 Farcaster's $180M in funding from a16z and Paradigm placed it inside the a16z ecosystem's investment thesis (Chris Dixon's "read/write/own"). The community benefited from this: institutional credibility, connections to other portfolio companies, and the cultural cachet of being a16z-backed. The tension: a16z-backed means growth-optimized, which conflicted with the founding-period culture that valued small and builder-heavy. The DAU decline of 2025 made this tension visible as a structural failure: the community could not scale past 100K DAU without changing character, and changing character risked losing the users whose presence defined the value proposition.
 
-**Cross-reference:** `communities/a16z-ecosystem.md`
+**Cross-reference:** [a16z-ecosystem](../communities/a16z-ecosystem.md)
 
 ### Base / Coinbase Ecosystem (Technical Infrastructure)
 
@@ -194,19 +194,19 @@ Farcaster's token economy runs predominantly on Base (Coinbase's L2). The $DEGEN
 
 Clanker's model — deploy a token by @mentioning an AI agent in a cast — is a live instance of Thread 7 applied to token creation. The token is summoned into existence through a performative speech act inside a social protocol. Farcaster was the social layer where AI agent token culture arrived earliest in the Ethereum ecosystem, predating the Solana AI agent token explosion. The Clanker acquisition by Farcaster (October 2025) and its subsequent transfer to Neynar represent the most developed instantiation of "social-graph-as-token-distribution-mechanism" in any decentralized social network.
 
-**Cross-reference:** `communities/ai-agent-tokens.md`
+**Cross-reference:** [ai-agent-tokens](../communities/ai-agent-tokens.md)
 
 ### Solana Dev Culture (Parallel, Distinct)
 
 Both communities are builder-heavy and crypto-native. Both have status hierarchies based on shipping rather than follower count. The key difference: Solana dev culture prioritizes performance as the terminal value; Farcaster culture prioritized protocol decentralization. The DEGEN token's choice to launch on Base (Ethereum L2) rather than Solana was a revealed-preference signal about where the Farcaster community's infrastructure loyalties lay. No meaningful cross-community discourse; they inhabit parallel builder cultures with adjacent but non-overlapping VC backing.
 
-**Cross-reference:** `communities/solana-dev-culture.md`
+**Cross-reference:** [solana-dev-culture](../communities/solana-dev-culture.md)
 
 ### Prediction Markets (Infrastructure Client, Minor)
 
 Polymarket's integration with Farcaster for market discovery and social sharing is the most concrete overlap. The Farcaster social graph is a natural distribution channel for prediction market content: resolution events generate cast-worthy moments. Vitalik Buterin's active presence on both Farcaster and in Polymarket discourse creates a personal link between the communities. Not a deep structural overlap but a consistent one.
 
-**Cross-reference:** `communities/prediction-markets.md`
+**Cross-reference:** [prediction-markets](../communities/prediction-markets.md)
 
 ---
 

@@ -180,7 +180,7 @@ The relationship is explicit and has been operationalized. pump.fun (6M+ tokens 
 
 The dev community does not treat this as embarrassing. Mert Mumtaz publicly tracks pump.fun metrics and discusses the platform in the same register as DeFi infrastructure. The implicit thesis: memecoin volume is real economic activity, and real economic activity validates the engineering. However — and this distinction matters — the builder community distinguishes between the infrastructure that enables memecoin trading (legitimate engineering work) and the act of launching memecoins (degen activity, respected but separate).
 
-**Cross-reference:** `communities/memecoin-culture.md`
+**Cross-reference:** [memecoin-culture](../communities/memecoin-culture.md)
 
 ### AI Agent Tokens (Growing Overlap)
 
@@ -188,13 +188,13 @@ The Colosseum Agent Hackathon (2025-2026) — where AI agents competed to build 
 
 The $ai16z token's peak at $2B market cap was a Solana-hosted phenomenon. The community is building toward AI agent infrastructure as the next primary use case after DeFi and memecoins.
 
-**Cross-reference:** `communities/ai-agent-tokens.md`
+**Cross-reference:** [ai-agent-tokens](../communities/ai-agent-tokens.md)
 
 ### Prediction Markets (Infrastructure Client)
 
 PumpMarket (prediction markets on pump.fun) received Anatoly Yakovenko's public acknowledgment during its devnet phase — a significant signal of cross-community validation. Solana's throughput characteristics make it a natural prediction market settlement layer. The ongoing Colosseum hackathon pipeline continues to produce prediction market projects.
 
-**Cross-reference:** `communities/prediction-markets.md`
+**Cross-reference:** [prediction-markets](../communities/prediction-markets.md)
 
 ### a16z Ecosystem (VC Relationship, Complicated)
 
