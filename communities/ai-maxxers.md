@@ -83,7 +83,17 @@ Adversarial Fact-Check: p/acc requires a consensus on "Purpose."
 ---
 
 ## Sources
-- [e/acc Wikipedia](https://en.wikipedia.org/wiki/Effective_accelerationism)
-- [Thermodynamic Computing — ML Street Talk (2025)](https://www.youtube.com/watch?v=HTDML)
-- [A Regenerative Accelerationist Manifesto (Jan 2026)](https://omniharmonic.substack.com)
-- [Nick Srnicek, *Silicon Empires* (2025)](https://politybooks.com)
+
+Andreessen, M. (2023). *The techno-optimist manifesto*. https://a16z.com/the-techno-optimist-manifesto/
+
+Jezos, B. [@BasedBeffJezos]. (2026, February 18). *Even the magma yearns for form. The thermodynamic god...* [X thread]. X. https://x.com/beffjezos
+
+Life, B. (2026, January). *A regenerative accelerationist manifesto*. Omniharmonic. https://omniharmonic.substack.com
+
+ML Street Talk. (2025). *Thermodynamic computing: The next frontier* [Video]. YouTube. https://www.youtube.com/watch?v=HTDML
+
+Poetter, T. (2026). *Purposeful accelerationism manifesto*. Potentialism. https://potentialism.substack.com
+
+Srnicek, N. (2025). *Silicon empires: The fight for the future of AI*. Polity Press. https://politybooks.com
+
+Wikipedia. (2024). *Effective accelerationism*. https://en.wikipedia.org/wiki/Effective_accelerationism

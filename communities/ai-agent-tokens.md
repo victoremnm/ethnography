@@ -202,17 +202,27 @@ Full transcript synthesis: [`sources/deep-reads/a16z-ai-crypto-collision-2025.md
 ---
 
 ## Sources
-- Dune Analytics: live query, `dex.trades` on Base, VIRTUAL/WETH pair, Feb 2026
-- Kaito AI category leaderboard, Feb 2026: kaito.ai
-- [Building the Agent Economy on Ethereum — Bankless, Feb 26 2026](https://www.bankless.com/read/building-the-agent-economy-on-ethereum)
-- [OpenClaw and the Body of the Agent Economy — Bankless, Feb 7 2026](https://www.bankless.com/read/openclaw-and-the-body-of-the-agent-economy)
-- [OpenClaw Declares War on Crypto Content — Bankless, Feb 23 2026](https://www.bankless.com/read/news/openclaw-declares-war-on-crypto-content)
-- [Unless That Claw Is The Famous OpenClaw — Zvi, Feb 3 2026](https://thezvi.substack.com/p/unless-that-claw-is-the-famous-openclaw)
-- [Raising a Special Little AI — notboring, Feb 3 2026](https://www.notboring.co/p/raising-a-special-little-ai)
-- [Best Of Moltbook — Astral Codex Ten, Jan 30 2026](https://www.astralcodexten.com/p/best-of-moltbook)
-- [Moltbook: After The First Weekend — Astral Codex Ten, Feb 2 2026](https://www.astralcodexten.com/p/moltbook-after-the-first-weekend)
-- [ai16z token analysis — arXiv AI-Based Crypto Tokens](https://arxiv.org/html/2505.07828v2)
-- [AI Agent $442K Incident — CCN](https://www.ccn.com/education/crypto/ai-agent-sends-5-percent-memecoin-supply-250k-lobstar-wilde-incident/)
-- [TRM Labs 2026 Crypto Crime Report](https://www.trmlabs.com)
-- [a16z Crypto 2026 Outlook](https://a16zcrypto.com)
-- [Virtuals Protocol Documentation](https://virtuals.io)
+
+Alexander, S. [@astralcodexten]. (2026, January 30). *Best of Moltbook* [Substack post]. Astral Codex Ten. https://www.astralcodexten.com/p/best-of-moltbook
+
+Alexander, S. [@astralcodexten]. (2026, February 2). *Moltbook: After the first weekend* [Substack post]. Astral Codex Ten. https://www.astralcodexten.com/p/moltbook-after-the-first-weekend
+
+Andreessen Horowitz. (2026). *a16z crypto 2026 outlook*. https://a16zcrypto.com
+
+Bankless. (2026, February 7). *OpenClaw and the body of the agent economy*. https://www.bankless.com/read/openclaw-and-the-body-of-the-agent-economy
+
+Bankless. (2026, February 23). *OpenClaw declares war on crypto content*. https://www.bankless.com/read/news/openclaw-declares-war-on-crypto-content
+
+Bankless. (2026, February 26). *Building the agent economy on Ethereum*. https://www.bankless.com/read/building-the-agent-economy-on-ethereum
+
+Dune Analytics. (2026, February). *DEX trades on Base: VIRTUAL/WETH pair* [Data dashboard]. https://dune.com/
+
+Kaito. (2026, February). *AI category leaderboard* [Data dashboard]. https://kaito.ai/
+
+McCormick, P. [@packyM]. (2026, February 3). *Raising a special little AI* [Substack post]. Not Boring. https://www.notboring.co/p/raising-a-special-little-ai
+
+Mowshowitz, Z. [@zvimowshowitz]. (2026, February 3). *Unless that claw is the famous OpenClaw* [Substack post]. Unless. https://thezvi.substack.com/p/unless-that-claw-is-the-famous-openclaw
+
+TRM Labs. (2026). *2026 crypto crime report*. https://www.trmlabs.com
+
+Virtuals Protocol. (2026). *Virtuals protocol documentation*. https://virtuals.io

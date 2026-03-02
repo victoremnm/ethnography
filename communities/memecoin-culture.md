@@ -161,8 +161,13 @@ The "middle finger to wealth structures" narrative is the most effective marketi
 ---
 
 ## Sources
-- [pump.fun Wikipedia](https://en.wikipedia.org/wiki/Pump.fun)
-- [Memecoin Hall of Shame 2025 — CryptoSlate](https://cryptoslate.com/the-memecoin-hall-of-shame-10-tokens-that-defined-2025-wildest-trades/)
-- [Pump.fun Meme Coin Mania — Storm Partners](https://storm.partners/blog-post/meme-coin-mania-on-pump-fun-an-economic-and-legal-analysis)
-- [AI Agent $442K Incident — CCN](https://www.ccn.com/education/crypto/ai-agent-sends-5-percent-memecoin-supply-250k-lobstar-wilde-incident/)
-- [AI-Based Crypto Tokens Analysis — arXiv](https://arxiv.org/html/2505.07828v2)
+
+CCN. (2025). *AI agent sends 5 percent of memecoin supply to human operator: The LOBSTAR incident* [News article]. https://www.ccn.com
+
+CryptoSlate. (2025). *Memecoin hall of shame 2025: 10 tokens that defined wild trades*. https://cryptoslate.com
+
+Storm Partners. (2025). *Pump.fun meme coin mania: An economic and legal analysis*. https://storm.partners
+
+Wikipedia. (2025). *Pump.fun*. https://en.wikipedia.org/wiki/Pump.fun
+
+Zhu, F., & Li, Z. (2025). *AI-based crypto tokens analysis* [Preprint]. arXiv. https://arxiv.org/html/2505.07828v2

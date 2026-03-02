@@ -26,6 +26,14 @@ Use trusted critical voices to evaluate the claim.
 - *Action:* Cross-reference community claims with "Tier 1" skeptics (e.g., Zvi Mowshowitz for prediction markets, Molly White for crypto).
 - *Output:* A dedicated "Contested Views" section in every research document.
 
+## Citation Standards: APA 7th Edition (2026)
+
+To ensure academic rigor and legitimacy, all sources must be cited using the APA 7th Edition style for digital and AI-mediated content.
+
+- **Social Media (X/Farcaster):** `Author, A. A. [@username]. (Year, Month Day). *First 20 words...* [Format]. Platform. URL`
+- **AI Agent Output:** `Company. (2026). *Name of AI* (Version) [Large language model]. URL`
+- **On-Chain Data:** Cited as a `[Data dashboard]` with the specific query or dashboard name.
+
 ## Sources
 - Netnography overview: https://en.wikipedia.org/wiki/Netnography
 - Digital ethnography (Decision Lab): https://thedecisionlab.com/reference-guide/anthropology/digital-ethnography
