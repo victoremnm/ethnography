@@ -70,9 +70,10 @@ The blockchain is a public behavioral trace. Token purchases, DAO votes, and liq
 
 **Extraction method:**
 ```bash
+# Requires: BRAVE_API_KEY set (see Environment Setup)
 # Brave search for specific on-chain analytics
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:dune.com+solana+memecoin&count=5" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 
 # DeFiLlama API (no auth required)
 curl "https://api.llama.fi/tvl/aave"
@@ -117,17 +118,23 @@ GitHub trending is the earliest public signal for which OSS AI projects and cryp
 
 **GitHub API extraction:**
 ```bash
-# Trending AI repos (by stars this week)
-curl "https://api.github.com/search/repositories?q=topic:llm+stars:>500+pushed:>2026-01-01&sort=stars&order=desc&per_page=10" \
-  -H "Accept: application/vnd.github.v3+json"
+# Requires: GITHUB_TOKEN, BRAVE_API_KEY set (see Environment Setup)
+THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
+
+# Trending AI repos (by recent stars)
+curl -s "https://api.github.com/search/repositories?q=topic:llm+stars:>500+pushed:>${THIRTY_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}"
 
 # Repos by star velocity (new repos gaining traction)
-curl "https://api.github.com/search/repositories?q=topic:ai-agent+created:>2026-02-01&sort=stars&order=desc&per_page=10" \
-  -H "Accept: application/vnd.github.v3+json"
+FOURTEEN_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(14))")
+curl -s "https://api.github.com/search/repositories?q=topic:ai-agent+created:>${FOURTEEN_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}"
 
 # Brave search for GitHub activity on specific topics
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:github.com+\"ai+agents\"+stars&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 **For which communities:** Open-source AI (primary), Solana dev culture, DeSci, AI agent tokens, Farcaster ecosystem
@@ -140,9 +147,10 @@ Farcaster's builder-heavy composition makes it a leading indicator for crypto-na
 
 **Monitoring without full embeds:**
 ```bash
-# Neynar API (free tier available) — trending casts
+# Requires: NEYNAR_KEY set (see Environment Setup)
+# Get a free Neynar API key at: https://neynar.com
 curl "https://api.neynar.com/v2/farcaster/feed/trending?limit=20" \
-  -H "api_key: YOUR_NEYNAR_KEY"
+  -H "api_key: ${NEYNAR_KEY}"
 
 # Dune Farcaster analytics (public dashboards)
 # dune.com/neynar/farcaster-protocol-stats
@@ -155,7 +163,7 @@ curl "https://api.neynar.com/v2/farcaster/feed/trending?limit=20" \
 **Brave search workaround for Farcaster:**
 ```bash
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"ai+agent\"&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 **For which communities:** Farcaster/Warpcast, AI agent tokens, Solana dev culture, Proof of Personhood, DeSci
@@ -212,21 +220,23 @@ LessWrong and the EA Forum are where ideas originating in Thread 2 (EA/AI Safety
 
 **Access:**
 ```bash
+# Requires: BRAVE_API_KEY set (see Environment Setup)
 # LessWrong RSS (most recent posts)
 # Add to RSS reader: https://www.lesswrong.com/?format=rss
 
-# LessWrong GraphQL API
+# LessWrong GraphQL API — top posts from last 30 days
+THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
 curl -X POST "https://www.lesswrong.com/graphql" \
   -H "Content-Type: application/json" \
-  -d '{"query": "{ posts(input: {terms: {view: \"top\", limit: 10, after: \"2026-02-01\"}}) { results { title url score commentCount } } }"}'
+  -d "{\"query\": \"{ posts(input: {terms: {view: \\\"top\\\", limit: 10, after: \\\"${THIRTY_DAYS_AGO}\\\"}}) { results { title url score commentCount } } }\"}"
 
 # Brave search for recent LessWrong posts on specific topics
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:lesswrong.com+\"AI+agents\"&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 
-# EA Forum (same GraphQL pattern)
+# EA Forum (same pattern)
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:forum.effectivealtruism.org+\"AI+safety\"&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 **For which communities:** DeSci, Prediction markets, Open-source AI, AI safety content within ai-maxxers counter-discourse, Proof of Personhood
@@ -236,15 +246,16 @@ curl -s "https://api.search.brave.com/res/v1/web/search?q=site:forum.effectiveal
 For Thread 3 (Cybernetics/Info Theory), Thread 4 (Epistemic Rationalism), and the technical wing of open-source AI, arXiv preprints are primary source material that generates discourse before papers reach conferences.
 
 ```bash
+# Requires: BRAVE_API_KEY set (see Environment Setup)
 # arXiv API (free, no auth)
 curl "https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+ti:agent&sortBy=submittedDate&max_results=10"
 
-# Recent ML papers
+# Recent ML papers (last 30 days — update date range manually)
 curl "https://export.arxiv.org/api/query?search_query=cat:cs.LG+AND+submittedDate:[20260201+TO+20260301]&sortBy=submittedDate&max_results=20"
 
 # Brave search for recent influential preprints
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:arxiv.org+AI+agents+2026&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 **Signal heuristic:** A preprint getting traction on Papers With Code or HN within a week of posting will influence practitioner behavior 2–4 weeks later.
@@ -259,14 +270,16 @@ HN is the leading signal source for the OSS AI developer community specifically 
 
 **HN Algolia API (free, no auth):**
 ```bash
-# Search recent HN posts by topic
-curl "https://hn.algolia.com/api/v1/search?query=local+llm&tags=story&hitsPerPage=20&numericFilters=created_at_i>1706745600"
+# Search recent HN posts by topic (last 30 days)
+SINCE_30D=$(( $(date +%s) - 30 * 86400 ))
+curl "https://hn.algolia.com/api/v1/search?query=local+llm&tags=story&hitsPerPage=20&numericFilters=created_at_i>${SINCE_30D}"
 
 # Recent "Show HN" posts (product launches)
 curl "https://hn.algolia.com/api/v1/search?query=AI+agent&tags=show_hn&hitsPerPage=10"
 
 # Posts from last 7 days with high points
-curl "https://hn.algolia.com/api/v1/search?query=open+source+ai&tags=story&numericFilters=points>100,created_at_i>$(date -v-7d +%s)"
+SINCE_7D=$(( $(date +%s) - 7 * 86400 ))
+curl "https://hn.algolia.com/api/v1/search?query=open+source+ai&tags=story&numericFilters=points>100,created_at_i>${SINCE_7D}"
 ```
 
 **RSS (add to feed reader):**
@@ -298,8 +311,9 @@ Substack sits in the middle of the cascade — better than Reddit for synthesis,
 summarize "https://banklesshq.substack.com/p/latest" --length xl --plain
 
 # Brave search for recent relevant essays
+# Requires: BRAVE_API_KEY set (see Environment Setup)
 curl -s "https://api.search.brave.com/res/v1/web/search?q=site:substack.com+\"AI+agents\"+crypto&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 ---
@@ -334,9 +348,11 @@ https://www.reddit.com/r/artificial/top/.rss?t=week
 **Brave search extraction pattern (no Reddit API needed):**
 ```bash
 # Historical Reddit search via Brave
+# Requires: BRAVE_API_KEY set (see Environment Setup)
 QUERY="\"open source AI\" site:reddit.com after:2026-01-01"
-curl -s "https://api.search.brave.com/res/v1/web/search?q=$(python3 -c "import urllib.parse; print(urllib.parse.quote('$QUERY'))")&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')" \
+ENCODED_QUERY=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "${QUERY}")
+curl -s "https://api.search.brave.com/res/v1/web/search?q=${ENCODED_QUERY}&count=10" \
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}" \
   | jq '.web.results[] | {title, url, description}'
 ```
 
@@ -373,7 +389,7 @@ YouTube, podcasts, and mainstream media. Useful only as:
 
 ## Per-Community Signal Map
 
-Which sources to prioritize for each of the 23 communities:
+Which sources to prioritize for each of the 21 active community profiles (silent-majority and institutional are listed in HOME.md but do not yet have full profile files):
 
 | Community | Primary Sources (Leading) | Secondary Sources | Reddit/Lag |
 |-----------|--------------------------|-------------------|------------|
@@ -401,6 +417,21 @@ Which sources to prioritize for each of the 23 communities:
 
 ---
 
+## Environment Setup
+
+Before running any snippet in this document, load credentials into your shell once:
+
+```bash
+# Run once per shell session — requires 1Password CLI authenticated
+export BRAVE_API_KEY=$(op read "op://Agent/Brave API Key/password")
+export GITHUB_TOKEN=$(gh auth token)   # or: op read "op://Agent/GitHub Token/credential"
+export NEYNAR_KEY=$(op read "op://Agent/Neynar API/credential")
+```
+
+> **macOS date note:** Snippets below use portable shell arithmetic `$(( $(date +%s) - N * 86400 ))` for time offsets. Do not substitute macOS-only `date -v-Nd` flags — they will fail on Linux/GNU systems.
+
+---
+
 ## Integrated Extraction Workflow
 
 ### Daily (5-minute scan, automated)
@@ -408,12 +439,15 @@ Which sources to prioritize for each of the 23 communities:
 ```bash
 #!/bin/bash
 # Quick pulse check — run daily or pipe output to RSS reader
+# Requires: BRAVE_API_KEY, GITHUB_TOKEN set (see Environment Setup above)
 
-KEY=$(op read "op://Agent/Brave API Key/password")
+TWO_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(2))")
 
 echo "=== GITHUB TRENDING (AI/Crypto) ==="
-curl -s "https://api.github.com/search/repositories?q=topic:llm+pushed:>$(date -v-2d +%Y-%m-%d)&sort=stars&per_page=5" \
-  -H "Accept: application/vnd.github.v3+json" | jq '.items[] | {name, stargazers_count, html_url}'
+curl -s "https://api.github.com/search/repositories?q=topic:llm+pushed:>${TWO_DAYS_AGO}&sort=stars&per_page=5" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+  | jq '.items[] | {name, stargazers_count, html_url}'
 
 echo "=== HN TOP AI POSTS ==="
 curl -s "https://hn.algolia.com/api/v1/search?query=AI+crypto&tags=story&numericFilters=points>50&hitsPerPage=5" \
@@ -438,31 +472,39 @@ See `methods/community-pulse-monitoring.md` for the full 30-minute protocol.
 ### Research queries (ad hoc, via Brave API)
 
 ```bash
-# Template for research queries
-BRAVE_KEY=$(op read "op://Agent/Brave API Key/password")
+# Requires: BRAVE_API_KEY, GITHUB_TOKEN set (see Environment Setup above)
 
 # Reddit retrospective (any topic, any timeframe)
 function reddit_search() {
-  local query="site:reddit.com $1"
-  curl -s "https://api.search.brave.com/res/v1/web/search?q=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1]))" "$query")&count=10" \
-    -H "X-Subscription-Token: $BRAVE_KEY" | jq '.web.results[] | {title, url}'
+  local encoded_q
+  encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote('site:reddit.com ' + sys.argv[1]))" "$1")
+  curl -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
+    -H "X-Subscription-Token: ${BRAVE_API_KEY}" | jq '.web.results[] | {title, url}'
 }
 
 # GitHub repo search
 function github_search() {
-  curl -s "https://api.github.com/search/repositories?q=$1&sort=stars&per_page=10" \
-    -H "Accept: application/vnd.github.v3+json" | jq '.items[] | {name, stargazers_count, description}'
+  local encoded_q
+  encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$1")
+  curl -s "https://api.github.com/search/repositories?q=${encoded_q}&sort=stars&per_page=10" \
+    -H "Accept: application/vnd.github.v3+json" \
+    -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+    | jq '.items[] | {name, stargazers_count, description}'
 }
 
 # LessWrong search
 function lw_search() {
-  curl -s "https://api.search.brave.com/res/v1/web/search?q=site:lesswrong.com+$1&count=10" \
-    -H "X-Subscription-Token: $BRAVE_KEY" | jq '.web.results[] | {title, url}'
+  local encoded_q
+  encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote('site:lesswrong.com ' + sys.argv[1]))" "$1")
+  curl -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
+    -H "X-Subscription-Token: ${BRAVE_API_KEY}" | jq '.web.results[] | {title, url}'
 }
 
 # HN search
 function hn_search() {
-  curl -s "https://hn.algolia.com/api/v1/search?query=$1&tags=story&hitsPerPage=10" \
+  local encoded_q
+  encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$1")
+  curl -s "https://hn.algolia.com/api/v1/search?query=${encoded_q}&tags=story&hitsPerPage=10" \
     | jq '.hits[] | {title, url, points, created_at}'
 }
 ```
