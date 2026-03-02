@@ -189,8 +189,15 @@ The move from Web2 to Web3 is framed as a liberation from platform monopolies. H
 ---
 
 ## Sources
-- [a16z crypto website](https://a16zcrypto.com/)
-- [Chris Dixon on AI + Crypto — a16z](https://a16z.com/ai-crypto-internet-chris-dixon/)
-- [Chris Dixon profile — Fortune](https://fortune.com/crypto/2024/01/25/chris-dixon-read-write-own-a16z-andreessen-horowitz-crypto/)
-- [a16z State of Crypto 2025 — Genfinity](https://genfinity.io/2025/10/23/a16z-state-of-crypto-2025-stablecoins-institutions-ai/)
-- [a16z Largest Crypto Fund — Blockworks](https://blockworks.co/news/andreessen-horowitz-launches-largest-crypto-fund-ever)
+
+Andreessen Horowitz. (2025, October 23). *a16z state of crypto 2025: stablecoins, institutions, AI*. Genfinity. https://genfinity.io
+
+Andreessen, M. (2023). *The techno-optimist manifesto*. https://a16z.com/the-techno-optimist-manifesto/
+
+Blockworks. (2024). *a16z launches largest crypto fund ever*. https://blockworks.co
+
+Dixon, C. (2024). *Read write own: Building the next era of the internet*. Random House. https://readwriteown.com
+
+Dixon, C. (2025). *The AI + crypto internet*. a16z crypto. https://a16z.com/ai-crypto-internet-chris-dixon/
+
+Fortune. (2024, January 25). *Chris Dixon profile: The VC betting on Web3*. https://fortune.com
