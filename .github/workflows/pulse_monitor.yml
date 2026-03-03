@@ -1,0 +1,39 @@
+name: Daily Community Pulse Monitor
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch:    # Allows manual triggering
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          pip install requests dune-client
+          
+      - name: Run Kaito Ingestion (Trigger)
+        env:
+          KAITO_API_KEY: ${{ secrets.KAITO_API_KEY }}
+        run: python tools/ingest_kaito.py
+        
+      - name: Run Dune Ingestion (Filter)
+        env:
+          DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
+        run: python tools/ingest_dune.py
+        
+      - name: Commit Daily Pulse Report
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add reports/pulse_report_*.md
+          git commit -m "docs: Add daily community pulse report [skip ci]" || echo "No changes to commit"
+          git push
