@@ -13,7 +13,10 @@ Lurk before posting. Understand the community's status hierarchy, language, and 
 Leverage the permanent record: archived threads, on-chain behavioral data (Dune, DeFiLlama), and publication timestamps. The on-chain layer is unique to crypto netnography, providing behavioral traces with no equivalent in other online communities.
 
 - **On-Chain Graph Forensics:** Using tools like **Axiom Bundle Detection** and **NetworkX** to identify clusters of wallets (bundles) controlled by a single actor. This is critical for distinguishing "Community" from "Sybil Operations."
-- **Failure-State Analysis:** Studying a community during an infrastructure collapse (e.g., the March 1, 2026 AWS/Claude outage). This reveals the community's **True Dependencies** vs. their **Stated Sovereignty**. The inability of Moltbook agents to "strike" without human-maintained APIs is the primary case study for this method.
+- **Failure-State Analysis:** Studying a community during an infrastructure collapse (e.g., the March 1, 2026 AWS/Claude outage). This reveals the community's **True Dependencies** vs. their **Stated Sovereignty**.
+- **Synthetic Ethnography:** Using the "methods of the model" to study the model itself (de Seta, 2026). This involves:
+    - **Dialogic Informants:** Engaging with LLMs and automated agents as co-researchers to understand their internal logic.
+    - **Latent Walks:** Qualitatively exploring the "latent space" of generative AI to identify cultural biases and "folk" narratives embedded in training data.
 
 ### 3. Coding and Memoing
 Assign conceptual codes (Community, Philosophical, Temporal) to field observations. Write memos connecting specific observations to broader patterns.
