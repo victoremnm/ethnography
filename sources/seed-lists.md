@@ -104,6 +104,107 @@ These are better monitored via **Twitter Lists** than direct follows. Their valu
 
 ---
 
+## GitHub — Developer Attention Signals
+
+Star velocity is the leading indicator for which OSS AI and crypto projects are capturing developer mind-share, typically 3–10 days before X discourse.
+
+**Tracking pages (manual, no auth):**
+- [GitHub Trending (daily)](https://github.com/trending) — filter by language, date range
+- [GitHub Trending (weekly)](https://github.com/trending?since=weekly)
+- Topics: [llm](https://github.com/topics/llm), [ai-agent](https://github.com/topics/ai-agent), [ethereum](https://github.com/topics/ethereum), [solana](https://github.com/topics/solana), [prediction-market](https://github.com/topics/prediction-market), [desci](https://github.com/topics/desci)
+- [Hugging Face Trending Models](https://huggingface.co/models) — OSS AI model attention
+- [Papers With Code (State of the Art)](https://paperswithcode.com/sota) — leading for ML research claims
+
+**API extraction:**
+```bash
+# Repos gaining star velocity (recent AI repos)
+SINCE_JAN_1=$(( $(date +%s -d "2026-01-01") 2>/dev/null || date -j -f "%Y-%m-%d" "2026-01-01" +%s ))
+# Standardized portable date check:
+THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
+
+curl --fail "https://api.github.com/search/repositories?q=topic:llm+pushed:>${THIRTY_DAYS_AGO}&sort=stars&per_page=10" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}"
+```
+
+**Research value:** Use for communities: open-source-ai, desci, solana-dev-culture, ai-agent-tokens, farcaster-warpcast (Farcaster protocol repos).
+
+---
+
+## LessWrong / EA Forum — Idea Formation Layer
+
+The rationalist ecosystem is where Thread 2 (EA/AI Safety) and Thread 4 (Epistemic Rationalism) ideas develop 1–4 weeks before reaching X/CT. High-upvote LW posts often become X threads weeks later.
+
+**Access points:**
+- [LessWrong](https://www.lesswrong.com) — [RSS](https://www.lesswrong.com/?format=rss)
+- [EA Forum](https://forum.effectivealtruism.org) — [RSS](https://forum.effectivealtruism.org/?format=rss)
+- [Alignment Forum](https://alignmentforum.org) — technical AI safety research
+- LessWrong GraphQL API: `https://www.lesswrong.com/graphql` (no auth required for public posts)
+
+**Key tags to monitor:** `AI`, `AI Safety`, `Forecasting`, `Rationality`, `DeSci`, `Prediction Markets`
+
+**Research value:** Communities: prediction-markets, desci, open-source-ai, refi-public-goods, proof-of-personhood. Thread 2 and Thread 4 ground truth.
+
+---
+
+## Hacker News — OSS Developer Discourse
+
+HN reflects what the technical developer community is discussing, typically 7–14 days after GitHub signals and 7–14 days before mainstream coverage. Best source for open-source AI community specifically.
+
+**API (free, no auth):**
+- HN Algolia: `https://hn.algolia.com/api/v1/search?query=QUERY&tags=story&hitsPerPage=20`
+- Show HN (product launches): `https://hn.algolia.com/api/v1/search?query=QUERY&tags=show_hn`
+
+**RSS feeds:**
+```
+https://news.ycombinator.com/rss  — front page
+https://hnrss.org/newest?q=LLM&points=50  — keyword filtered (50+ points threshold)
+https://hnrss.org/newest?q=solana&points=30
+https://hnrss.org/newest?q=prediction+market&points=30
+```
+
+**Research value:** Communities: open-source-ai (primary), desci, prediction-markets, solana-dev-culture.
+
+---
+
+## Polymarket / Kalshi — Epistemic Barometers
+
+Prediction market prices are the compressed epistemic state of a community that has staked money on outcomes. Not leading indicators but coincident — they encode current informed-participant belief.
+
+**API access (read-only, no auth required for basic queries):**
+- Polymarket CLOB: `https://clob.polymarket.com/markets?active=true`
+- Polymarket Gamma: `https://gamma-api.polymarket.com/markets?active=true`
+- Kalshi REST: `https://trading-api.kalshi.com/trade-api/v2/markets?status=active&limit=100`
+
+**Research use:**
+- Market *existence* = topic salience to forecasters
+- Price *movement* = narrative disruption event (new information entering ecosystem)
+- New market *creation* = topic entering forecaster attention for first time
+- Price *divergence from community confidence* = most interesting analytical finding
+
+**Research value:** Communities: prediction-markets (primary output), regulatory-layer, politifi, network-states. Cross-reference with community stated beliefs to find divergence.
+
+---
+
+## Farcaster API — Crypto-Native Builder Discourse
+
+Farcaster's builder-heavy composition makes it a 2–5 day leading indicator for crypto-native technical narratives before they hit X.
+
+**API:**
+- Neynar trending: `https://api.neynar.com/v2/farcaster/feed/trending?limit=20` (requires free Neynar API key)
+- Warpcast trending: `warpcast.com/trending` (manual browse)
+- Dune Farcaster analytics: `dune.com/neynar/farcaster-protocol-stats`
+
+**Brave search workaround (no Neynar key needed):**
+```bash
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"TOPIC\"&count=10" \
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
+```
+
+**Research value:** Communities: farcaster-warpcast (primary), ai-agent-tokens, solana-dev-culture, proof-of-personhood, desci.
+
+---
+
 ## Community Pulse: Real-Time Monitoring
 
 > This section supports the 30-min/week monitoring protocol documented in [`methods/community-pulse-monitoring.md`](../methods/community-pulse-monitoring.md). Items here are observation points, not participation points.
@@ -117,12 +218,20 @@ These are better monitored via **Twitter Lists** than direct follows. Their valu
 | [r/memecoins](https://reddit.com/r/memecoins) | ~200K+ | Memecoin launches, community | Low signal — mostly dev self-promotion |
 | [r/solana](https://reddit.com/r/solana) | ~500K+ | Ecosystem discussion, technical | Medium signal; best Reddit source for Solana narrative |
 | [r/defi](https://reddit.com/r/defi) | ~300K+ | Protocol discussion, regulatory | Higher signal; useful for institutional/regulatory framing |
+| [r/MachineLearning](https://reddit.com/r/MachineLearning) | ~2.5M | Technical ML research discourse | Medium-High — practitioners lag arXiv/HN by ~7 days; useful for OSS AI |
+| [r/LocalLLaMA](https://reddit.com/r/LocalLLaMA) | ~300K+ | Local/OSS LLM deployment | High for real-world usage patterns; 5 days lag on news but leading on deployment friction |
+| [r/artificial](https://reddit.com/r/artificial) | ~1.2M | General AI discussion | Low-Medium; useful for mainstream AI narrative (lagging 14–28 days) |
+| [r/ethereum](https://reddit.com/r/ethereum) | ~1.6M | Ethereum ecosystem | Medium; protocol discourse lags X by 7–21 days |
+| [r/singularity](https://reddit.com/r/singularity) | ~700K | AI futures, e/acc-adjacent | Low-Medium; useful for Thread 1 (Accelerationism) retail consciousness |
 
-**RSS feeds (add to reader, filter by score >500 upvotes):**
+**RSS feeds (add to reader, filter by score >500 upvotes for crypto, >100 for AI subs):**
 ```
 https://www.reddit.com/r/CryptoMoonShots/.rss
 https://www.reddit.com/r/SatoshiStreetBets/.rss
 https://www.reddit.com/r/solana/.rss
+https://www.reddit.com/r/MachineLearning/top/.rss?t=week
+https://www.reddit.com/r/LocalLLaMA/top/.rss?t=week
+https://www.reddit.com/r/ethereum/top/.rss?t=week
 ```
 
 **Historical search tool:** [PullPush.io](https://pullpush-io.github.io/) — Pushshift successor; use for retrospective queries about specific token narratives on Reddit.

@@ -27,6 +27,7 @@ Netnographic research into AI/crypto online communities. Structured for a practi
 |------|---------|
 | [`netnography.md`](methods/netnography.md) | Research method, the `summarize` CLI workflow, credibility tiers, research debt tracker. |
 | [`community-pulse-monitoring.md`](methods/community-pulse-monitoring.md) | 30-min/week monitoring protocol across signal sources. |
+| [`signal-cascade.md`](methods/signal-cascade.md) | Lead/lag timing map — all 23 communities mapped to signal sources, extraction methods, API endpoints. |
 
 ### `communities/` — Field Profiles
 
