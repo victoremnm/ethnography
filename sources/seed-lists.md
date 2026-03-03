@@ -118,8 +118,13 @@ Star velocity is the leading indicator for which OSS AI and crypto projects are 
 **API extraction:**
 ```bash
 # Repos gaining star velocity (recent AI repos)
-curl "https://api.github.com/search/repositories?q=topic:llm+pushed:>2026-01-01&sort=stars&per_page=10" \
-  -H "Accept: application/vnd.github.v3+json"
+SINCE_JAN_1=$(( $(date +%s -d "2026-01-01") 2>/dev/null || date -j -f "%Y-%m-%d" "2026-01-01" +%s ))
+# Standardized portable date check:
+THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
+
+curl --fail "https://api.github.com/search/repositories?q=topic:llm+pushed:>${THIRTY_DAYS_AGO}&sort=stars&per_page=10" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}"
 ```
 
 **Research value:** Use for communities: open-source-ai, desci, solana-dev-culture, ai-agent-tokens, farcaster-warpcast (Farcaster protocol repos).
@@ -192,8 +197,8 @@ Farcaster's builder-heavy composition makes it a 2–5 day leading indicator for
 
 **Brave search workaround (no Neynar key needed):**
 ```bash
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"TOPIC\"&count=10" \
-  -H "X-Subscription-Token: $(op read 'op://Agent/Brave API Key/password')"
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"TOPIC\"&count=10" \
+  -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
 **Research value:** Communities: farcaster-warpcast (primary), ai-agent-tokens, solana-dev-culture, proof-of-personhood, desci.

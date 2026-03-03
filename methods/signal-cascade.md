@@ -72,12 +72,12 @@ The blockchain is a public behavioral trace. Token purchases, DAO votes, and liq
 ```bash
 # Requires: BRAVE_API_KEY set (see Environment Setup)
 # Brave search for specific on-chain analytics
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:dune.com+solana+memecoin&count=5" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:dune.com+solana+memecoin&count=5" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 
 # DeFiLlama API (no auth required)
-curl "https://api.llama.fi/tvl/aave"
-curl "https://api.llama.fi/protocols" | jq '.[] | select(.category == "RWA") | {name, tvl}'
+curl --fail "https://api.llama.fi/tvl/aave"
+curl --fail "https://api.llama.fi/protocols" | jq '.[] | select(.category == "RWA") | {name, tvl}'
 ```
 
 **For which communities:** Memecoins, Solana dev culture, RWA/Stablecoin, DeFi, AI agent tokens, Hyperliquid
@@ -122,18 +122,18 @@ GitHub trending is the earliest public signal for which OSS AI projects and cryp
 THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
 
 # Trending AI repos (by recent stars)
-curl -s "https://api.github.com/search/repositories?q=topic:llm+stars:>500+pushed:>${THIRTY_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
+curl --fail -s "https://api.github.com/search/repositories?q=topic:llm+stars:>500+pushed:>${THIRTY_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: Bearer ${GITHUB_TOKEN}"
 
 # Repos by star velocity (new repos gaining traction)
 FOURTEEN_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(14))")
-curl -s "https://api.github.com/search/repositories?q=topic:ai-agent+created:>${FOURTEEN_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
+curl --fail -s "https://api.github.com/search/repositories?q=topic:ai-agent+created:>${FOURTEEN_DAYS_AGO}&sort=stars&order=desc&per_page=10" \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: Bearer ${GITHUB_TOKEN}"
 
 # Brave search for GitHub activity on specific topics
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:github.com+\"ai+agents\"+stars&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:github.com+\"ai+agents\"+stars&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
@@ -149,7 +149,7 @@ Farcaster's builder-heavy composition makes it a leading indicator for crypto-na
 ```bash
 # Requires: NEYNAR_KEY set (see Environment Setup)
 # Get a free Neynar API key at: https://neynar.com
-curl "https://api.neynar.com/v2/farcaster/feed/trending?limit=20" \
+curl --fail "https://api.neynar.com/v2/farcaster/feed/trending?limit=20" \
   -H "api_key: ${NEYNAR_KEY}"
 
 # Dune Farcaster analytics (public dashboards)
@@ -162,7 +162,7 @@ curl "https://api.neynar.com/v2/farcaster/feed/trending?limit=20" \
 
 **Brave search workaround for Farcaster:**
 ```bash
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"ai+agent\"&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:warpcast.com+\"ai+agent\"&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
@@ -193,14 +193,14 @@ Prediction market prices are the compressed epistemic state of a community that 
 **Extraction:**
 ```bash
 # Polymarket active markets (CLOB API, no auth required for reads)
-curl "https://clob.polymarket.com/markets?active=true" | jq '.[] | {question, outcomePrices}'
+curl --fail "https://clob.polymarket.com/markets?active=true" | jq '.[] | {question, outcomePrices}'
 
 # Search for markets on specific topics
-curl "https://gamma-api.polymarket.com/markets?search=ai+regulation&active=true" \
+curl --fail "https://gamma-api.polymarket.com/markets?search=ai+regulation&active=true" \
   | jq '.[] | {question, endDate, outcomePrices}'
 
 # Kalshi markets (REST API)
-curl "https://trading-api.kalshi.com/trade-api/v2/markets?status=active&limit=100" \
+curl --fail "https://trading-api.kalshi.com/trade-api/v2/markets?status=active&limit=100" \
   | jq '.markets[] | {title, yes_bid, yes_ask}'
 ```
 
@@ -226,16 +226,16 @@ LessWrong and the EA Forum are where ideas originating in Thread 2 (EA/AI Safety
 
 # LessWrong GraphQL API — top posts from last 30 days
 THIRTY_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(30))")
-curl -X POST "https://www.lesswrong.com/graphql" \
+curl --fail -X POST "https://www.lesswrong.com/graphql" \
   -H "Content-Type: application/json" \
   -d "{\"query\": \"{ posts(input: {terms: {view: \\\"top\\\", limit: 10, after: \\\"${THIRTY_DAYS_AGO}\\\"}}) { results { title url score commentCount } } }\"}"
 
 # Brave search for recent LessWrong posts on specific topics
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:lesswrong.com+\"AI+agents\"&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:lesswrong.com+\"AI+agents\"&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 
 # EA Forum (same pattern)
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:forum.effectivealtruism.org+\"AI+safety\"&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:forum.effectivealtruism.org+\"AI+safety\"&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
@@ -248,13 +248,13 @@ For Thread 3 (Cybernetics/Info Theory), Thread 4 (Epistemic Rationalism), and th
 ```bash
 # Requires: BRAVE_API_KEY set (see Environment Setup)
 # arXiv API (free, no auth)
-curl "https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+ti:agent&sortBy=submittedDate&max_results=10"
+curl --fail "https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+ti:agent&sortBy=submittedDate&max_results=10"
 
 # Recent ML papers (last 30 days — update date range manually)
-curl "https://export.arxiv.org/api/query?search_query=cat:cs.LG+AND+submittedDate:[20260201+TO+20260301]&sortBy=submittedDate&max_results=20"
+curl --fail "https://export.arxiv.org/api/query?search_query=cat:cs.LG+AND+submittedDate:[20260201+TO+20260301]&sortBy=submittedDate&max_results=20"
 
 # Brave search for recent influential preprints
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:arxiv.org+AI+agents+2026&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:arxiv.org+AI+agents+2026&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
@@ -272,14 +272,14 @@ HN is the leading signal source for the OSS AI developer community specifically 
 ```bash
 # Search recent HN posts by topic (last 30 days)
 SINCE_30D=$(( $(date +%s) - 30 * 86400 ))
-curl "https://hn.algolia.com/api/v1/search?query=local+llm&tags=story&hitsPerPage=20&numericFilters=created_at_i>${SINCE_30D}"
+curl --fail "https://hn.algolia.com/api/v1/search?query=local+llm&tags=story&hitsPerPage=20&numericFilters=created_at_i>${SINCE_30D}"
 
 # Recent "Show HN" posts (product launches)
-curl "https://hn.algolia.com/api/v1/search?query=AI+agent&tags=show_hn&hitsPerPage=10"
+curl --fail "https://hn.algolia.com/api/v1/search?query=AI+agent&tags=show_hn&hitsPerPage=10"
 
 # Posts from last 7 days with high points
 SINCE_7D=$(( $(date +%s) - 7 * 86400 ))
-curl "https://hn.algolia.com/api/v1/search?query=open+source+ai&tags=story&numericFilters=points>100,created_at_i>${SINCE_7D}"
+curl --fail "https://hn.algolia.com/api/v1/search?query=open+source+ai&tags=story&numericFilters=points>100,created_at_i>${SINCE_7D}"
 ```
 
 **RSS (add to feed reader):**
@@ -287,6 +287,7 @@ curl "https://hn.algolia.com/api/v1/search?query=open+source+ai&tags=story&numer
 https://news.ycombinator.com/rss  — front page
 https://hnrss.org/newest?q=LLM&points=50  — keyword filtered
 https://hnrss.org/newest?q=solana&points=30
+https://hnrss.org/newest?q=prediction+market&points=30
 ```
 
 **For which communities:** Open-source AI (primary), DeSci, Prediction markets, Solana dev culture
@@ -312,7 +313,7 @@ summarize "https://banklesshq.substack.com/p/latest" --length xl --plain
 
 # Brave search for recent relevant essays
 # Requires: BRAVE_API_KEY set (see Environment Setup)
-curl -s "https://api.search.brave.com/res/v1/web/search?q=site:substack.com+\"AI+agents\"+crypto&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=site:substack.com+\"AI+agents\"+crypto&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}"
 ```
 
@@ -351,7 +352,7 @@ https://www.reddit.com/r/artificial/top/.rss?t=week
 # Requires: BRAVE_API_KEY set (see Environment Setup)
 QUERY="\"open source AI\" site:reddit.com after:2026-01-01"
 ENCODED_QUERY=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "${QUERY}")
-curl -s "https://api.search.brave.com/res/v1/web/search?q=${ENCODED_QUERY}&count=10" \
+curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=${ENCODED_QUERY}&count=10" \
   -H "X-Subscription-Token: ${BRAVE_API_KEY}" \
   | jq '.web.results[] | {title, url, description}'
 ```
@@ -359,7 +360,7 @@ curl -s "https://api.search.brave.com/res/v1/web/search?q=${ENCODED_QUERY}&count
 **PullPush for historical Reddit research:**
 ```bash
 # PullPush.io — Pushshift successor, historical Reddit search
-curl "https://api.pullpush.io/reddit/search/submission/?q=memecoin+solana&after=1704067200&size=25&sort_type=score"
+curl --fail "https://api.pullpush.io/reddit/search/submission/?q=memecoin+solana&after=1704067200&size=25&sort_type=score"
 ```
 
 **What Reddit does uniquely well that other sources don't:**
@@ -423,9 +424,10 @@ Before running any snippet in this document, load credentials into your shell on
 
 ```bash
 # Run once per shell session — requires 1Password CLI authenticated
-export BRAVE_API_KEY=$(op read "op://Agent/Brave API Key/password")
-export GITHUB_TOKEN=$(gh auth token)   # or: op read "op://Agent/GitHub Token/credential"
-export NEYNAR_KEY=$(op read "op://Agent/Neynar API/credential")
+# Replace placeholders with your actual 1Password vault paths
+export BRAVE_API_KEY=$(op read "op://YourVault/Brave API Key/password")
+export GITHUB_TOKEN=$(gh auth token)   # or: op read "op://YourVault/GitHub Token/credential"
+export NEYNAR_KEY=$(op read "op://YourVault/Neynar API/credential")
 ```
 
 > **macOS date note:** Snippets below use portable shell arithmetic `$(( $(date +%s) - N * 86400 ))` for time offsets. Do not substitute macOS-only `date -v-Nd` flags — they will fail on Linux/GNU systems.
@@ -444,17 +446,17 @@ export NEYNAR_KEY=$(op read "op://Agent/Neynar API/credential")
 TWO_DAYS_AGO=$(python3 -c "from datetime import date, timedelta; print(date.today() - timedelta(2))")
 
 echo "=== GITHUB TRENDING (AI/Crypto) ==="
-curl -s "https://api.github.com/search/repositories?q=topic:llm+pushed:>${TWO_DAYS_AGO}&sort=stars&per_page=5" \
+curl --fail -s "https://api.github.com/search/repositories?q=topic:llm+pushed:>${TWO_DAYS_AGO}&sort=stars&per_page=5" \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: Bearer ${GITHUB_TOKEN}" \
   | jq '.items[] | {name, stargazers_count, html_url}'
 
 echo "=== HN TOP AI POSTS ==="
-curl -s "https://hn.algolia.com/api/v1/search?query=AI+crypto&tags=story&numericFilters=points>50&hitsPerPage=5" \
+curl --fail -s "https://hn.algolia.com/api/v1/search?query=AI+crypto&tags=story&numericFilters=points>50&hitsPerPage=5" \
   | jq '.hits[] | {title, url, points}'
 
 echo "=== POLYMARKET ACTIVE MARKETS ==="
-curl -s "https://gamma-api.polymarket.com/markets?active=true&limit=5" \
+curl --fail -s "https://gamma-api.polymarket.com/markets?active=true&limit=5" \
   | jq '.[] | {question, outcomePrices}'
 ```
 
@@ -478,7 +480,7 @@ See `methods/community-pulse-monitoring.md` for the full 30-minute protocol.
 function reddit_search() {
   local encoded_q
   encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote('site:reddit.com ' + sys.argv[1]))" "$1")
-  curl -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
+  curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
     -H "X-Subscription-Token: ${BRAVE_API_KEY}" | jq '.web.results[] | {title, url}'
 }
 
@@ -486,7 +488,7 @@ function reddit_search() {
 function github_search() {
   local encoded_q
   encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$1")
-  curl -s "https://api.github.com/search/repositories?q=${encoded_q}&sort=stars&per_page=10" \
+  curl --fail -s "https://api.github.com/search/repositories?q=${encoded_q}&sort=stars&per_page=10" \
     -H "Accept: application/vnd.github.v3+json" \
     -H "Authorization: Bearer ${GITHUB_TOKEN}" \
     | jq '.items[] | {name, stargazers_count, description}'
@@ -496,7 +498,7 @@ function github_search() {
 function lw_search() {
   local encoded_q
   encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote('site:lesswrong.com ' + sys.argv[1]))" "$1")
-  curl -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
+  curl --fail -s "https://api.search.brave.com/res/v1/web/search?q=${encoded_q}&count=10" \
     -H "X-Subscription-Token: ${BRAVE_API_KEY}" | jq '.web.results[] | {title, url}'
 }
 
@@ -504,7 +506,7 @@ function lw_search() {
 function hn_search() {
   local encoded_q
   encoded_q=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$1")
-  curl -s "https://hn.algolia.com/api/v1/search?query=${encoded_q}&tags=story&hitsPerPage=10" \
+  curl --fail -s "https://hn.algolia.com/api/v1/search?query=${encoded_q}&tags=story&hitsPerPage=10" \
     | jq '.hits[] | {title, url, points, created_at}'
 }
 ```
